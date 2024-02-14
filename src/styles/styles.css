@@ -99,12 +99,9 @@ body {
     align-items: center;
 }
 
-.logo img {
-    max-width: 120px; /* Adjust the logo size */
-    height: auto; /* Maintain aspect ratio */
-}
 
 .logo {
+  
     display: flex;
     width: 110px; /* Ou qualquer outro tamanho padrão */
     height: auto; /* Mantém a proporção */
@@ -2090,6 +2087,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Logo à esquerda */
 .logo {
     flex-grow: 1;
+    
 }
 
 /* Seção para a barra de pesquisa e links sociais - à esquerda do botão de menu */
@@ -2131,6 +2129,20 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.logo {
+    width: 110px; /* Tamanho padrão da logo */
+    height: auto; /* Mantém a proporção */
+
+    /* Tamanho maior apenas para telas maiores que 768px */
+    @media (min-width: 769px) {
+        width: 150px; /* Tamanho maior para telas maiores */
+    }
+
+    /* Margem apenas para telas maiores que 768px */
+    @media (min-width: 769px) {
+        margin-left: 300px;
+    }
+}
 
 
 
