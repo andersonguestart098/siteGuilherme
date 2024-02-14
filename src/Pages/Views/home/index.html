@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensure this meta tag is present for responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>OKAfloor</title>
     <link rel="icon" href="/public/Símbolo Folha Preto.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
     
     
     <link rel="stylesheet" href="/src/styles/styles.css">
@@ -15,6 +19,7 @@
 </a>
 
 <body>
+<header>
     <div class="header-container">
     <div class="top-navbar">
             <div class="container">
@@ -23,10 +28,27 @@
         </div>
         <nav class="navbar">
             <div class="logo">
-                <img src="/public/Marca D_água Preta.png" id="logo-img" alt="Banner Principal">
+                <img src="/public/Marca D_água Preta.png" alt="Logo" style="width: 80px;"> <!-- Ajuste o caminho e o tamanho conforme necessário -->
             </div>
-            
-            <ul class="nav-links">
+            <button class="menu-button" id="menuButton">
+                <img src="/public/menu3.png" alt="Menu" id="imgMenu"> <!-- Ajuste o caminho conforme necessário -->
+            </button>
+<div class="dropdown-menu" id="mobileDropdown" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Produtos</a>
+        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Categorias</a>
+        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Contato</a>
+        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Porque a Oka?</a>
+        <a class="dropdown-item" href="#">
+            <img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">
+            Fale Conosco
+        </a>
+    </div>
+
+
+            <div class="nav-links" id="navLinks">
+                <div class="right-section">
+
+                
                 <!-- Barra de Pesquisa -->
                 <li class="search-bar">
                     <div style="display: flex; align-items: center;">
@@ -35,34 +57,21 @@
                             <img src="/public/lupa.png" alt="Pesquisar" style="width: 25px; height: 25px;">
                         </button>
                     </div>
-                    
-                    
                 </li>
-        
+            </div>
+
+
+                <div class="right-section">
                 <!-- Links Sociais -->
                 <li class="social-links" style="display: flex; padding: 0px; margin-right: -18px;">
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="/public/facebook (1).png" alt="Facebook" id="socialImg"></a>
                     <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img src="/public/instagram (1).png" alt="Instagram" id="socialImg"></a>
                     <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="/public/whatsapp (2).png" alt="YouTube" id="socialImg"></a>
                 </li>
-                <!-- Dropdown do Menu -->
-                <div class="dropdown">
-                    <button class="dropdown-toggle" id="navbarDropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="/public/menu.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">
-                       
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Produtos</a>
-                        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Categorias</a>
-                        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Contato</a>
-                        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Porque a Oka?</a>
-                        <a class="dropdown-item" href="#">
-                            <img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">
-                            Fale Conosco
-                        </a>
-                    </div>
-                </div>
-            </ul>
+            </div>
+
+
+            </div>
         </nav>
     </header>
     
@@ -117,7 +126,7 @@
                         </tr>
                         <tr>
                           <td>Material</td>
-                          <td>Porcelanato</td>
+                          <td>Laminado</td>
                         </tr>
                         <tr>
                           <td>Dimensões</td>
@@ -167,9 +176,9 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
                     <img src="/public/ponto2.png" id="imgSobre" alt="Ponto 2" style="max-width: 100%; height: auto;">
                 </div>
             </div>
-            
+           
         </section>
-        
+        <br/>
         <section class="pontos" data-aos="fade-up">
             <div class="ponto">
                 <img src="/public/piso (1).png" alt="Ponto 1">
@@ -344,9 +353,7 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
 
 
     </script>
-    <script>
-        
-    </script>
+
     <script>
         document.getElementById('btnModal').onclick = function() {
   document.getElementById('myModal').style.display = 'block';
@@ -389,19 +396,9 @@ window.onclick = function(event) {
 }
 
     </script>
-    <script>
-        <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.querySelector('.dropdown-toggle');
-    const menu = document.querySelector('.dropdown');
+ 
 
-    toggleButton.addEventListener('click', function() {
-        menu.classList.toggle('active');
-    });
-});
-</script>
-
-    </script>
+    
     <script>
 window.addEventListener('scroll', function() {
     var topNavbar = document.querySelector('.top-navbar');
@@ -490,6 +487,50 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
         </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var menuButton = document.getElementById("menuButton");
+        var dropdownMenu = document.getElementById("mobileDropdown");
+
+        menuButton.addEventListener("click", function(event) {
+            event.stopPropagation(); // Impede que o evento de clique seja propagado para o window
+
+            var rect = menuButton.getBoundingClientRect(); // Obtém as coordenadas do botão de menu
+
+            // Define a posição horizontal do menu dropdown
+            var leftPosition = rect.left - dropdownMenu.offsetWidth + menuButton.offsetWidth;
+            dropdownMenu.style.left = leftPosition + "px";
+
+            // Define a posição vertical do menu dropdown
+            dropdownMenu.style.top = (rect.bottom + window.pageYOffset) + "px";
+
+            dropdownMenu.classList.toggle("show");
+        });
+
+        // Fecha o menu dropdown quando o usuário clica fora dele
+        window.addEventListener("click", function(event) {
+            if (!event.target.matches('#menuButton')) {
+                if (dropdownMenu.classList.contains('show')) {
+                    dropdownMenu.classList.remove('show');
+                }
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
         
 </body>
 </html>
