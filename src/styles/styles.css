@@ -5,24 +5,90 @@
     box-sizing: border-box;
 }
 
-.navbar {
+.top-navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    background-color: #232852;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    transition: all 0.3s ease;
+    background-color: #fff; /* Cor de fundo alterada para branco */
+    color: #000; /* Cor do texto alterada para preto, se necessário */
+    font-size: 12px; /* Tamanho do texto */
+    font-family: "Exo", "Lucida Console", "Monaco", monospace;
+    color: #818381;
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 7px 0; /* Espaçamento interno */
+    width: 100%; /* Assegura que ocupe toda a largura */
+    
+    top: 0; /* Posiciona no topo da página */
+    z-index: 2000; /* Garante que esteja acima do navbar */
+    height: 45px; /* Altura definida */
+    border-bottom: 1px solid #E5E5E5; /* Adiciona borda preta na margem inferior */
+   
+    border-top: 3px solid #232852; /* Adiciona uma barra fina preta acima da top-navbar */
 }
 
-.navbar:hover {
-    background-color: #444;
+
+.top-navbar .container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 2px;
 }
+
+/* Estilização existente */
+
+
+.top-navbar {
+    display: flex;
+    background-color: #fff; /* Cor de fundo alterada para branco */
+    color: #000; /* Cor do texto alterada para preto, se necessário */
+    font-size: 12px; /* Tamanho do texto */
+    font-family: "Exo", "Lucida Console", "Monaco", monospace;
+    color: #818381;
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 7px 0; /* Espaçamento interno */
+    width: 100%; /* Assegura que ocupe toda a largura */
+    
+    top: 0; /* Posiciona no topo da página */
+    z-index: 2000; /* Garante que esteja acima do navbar */
+    height: 45px; /* Altura definida */
+    border-bottom: 1px solid #E5E5E5; /* Adiciona borda preta na margem inferior */
+   
+    border-top: 3px solid #232852; /* Adiciona uma barra fina preta acima da top-navbar */
+}
+
+
+.top-navbar .container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 2px;
+}
+
+/* Estilização existente */
+
+
+.navbar {
+    background-color: #fff; /* Cor de fundo alterada para branco */
+    width: 100%;
+    height: 112px;
+    z-index: 1000;
+    color: #000; /* Cor do texto, ajuste conforme necessário */
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2.5px solid #E5E5E5;
+    position: relative; /* Ajuste para garantir que fique fixo */
+    top: 0; /* Fixa o navbar no topo da página */
+    left: 0; /* Garante que o navbar esteja alinhado à esquerda */
+}
+
+/* Ajuste adicional para garantir que o conteúdo da página não fique escondido atrás do navbar quando ele estiver fixo */
+body {
+    padding-top: 112px; /* Ajuste este valor conforme a altura do seu navbar */
+}
+
+
+
 
 .container {
     width: 90%;
@@ -35,18 +101,19 @@
 
 #logo {
     height: 85px;
-    flex-basis: 100px;
 }
 
-#logo img {
-    width: 85px;
-    margin-right: 20px;
-}
-
-
-.nav-links, .social-links, .search-bar {
+#logo-img {
     display: flex;
-    align-items: center;
+    width: 110px; /* Ou qualquer outro tamanho padrão */
+    height: auto; /* Mantém a proporção */
+}
+
+.nav-links {
+    list-style: none;
+    margin-right: 20px;
+    display: flex;
+    align-items: center; /* Adiciona alinhamento vertical dos elementos */
 }
 
 .nav-links li {
@@ -62,7 +129,7 @@
 .nav-links a {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #232852;
     text-decoration: none;
     transition: color 0.3s ease;
     position: relative;
@@ -111,7 +178,7 @@
 
 .dropdown-toggle {
     background-color: transparent;
-    color: #fff;
+    color: #232852;
     border: none;
     cursor: pointer;
     padding: 10px 15px;
@@ -122,7 +189,7 @@
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #fff;
     min-width: 160px;
     z-index: 1;
     border-radius: 7px;
@@ -130,7 +197,7 @@
 }
 
 .dropdown-menu .dropdown-item {
-    color: #fff;
+    color: #232852;
     padding: 15px 16px;
     text-decoration: none;
     display: block;
@@ -168,18 +235,26 @@
 }
 
 #socialImg {
-    width: 40px;
+    width: 32px;
     
     
 }
+.social-links img {
+    display: block;
+    width: auto; /* Ajuste a largura conforme necessário */
+    height: 32px; /* Ajuste a altura conforme necessário */
+}
 
+/* Se estiver usando flexbox na .social-links, ajuste o gap conforme necessário */
 .social-links {
-    list-style: none;
-    margin-right: 10px; /* Ajusta a margem direita dos ícones sociais */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Ajuste este valor para controlar o espaçamento entre os ícones */
 }
 
 .social-link {
-    margin-right: 10px;
+     margin-right: 5px;
 }
 
 .social-links a::after {
@@ -198,15 +273,22 @@
 }
 
 .social-links a {
-    transition: transform 0.2s ease; /* Transição suave de 0.3 segundos */
+    margin: 0 5px; /* Ajuste o valor conforme necessário para reduzir o espaçamento */
+    padding: 0;
 }
 
 .social-links a:hover {
     transform: scale(1.1); /* Zoom de 10% ao passar o mouse */
 }
 
+.social-links a:last-child {
+    margin-right: 0; /* Remove a margem direita do último ícone */
+}
 
-
+/* Remove o margin-right adicional */
+.social-link, .social-links a {
+    margin-right: 0 !important;
+}
 
 .dropdown-menu a::after {
     content: '';
@@ -237,58 +319,84 @@
 
 
 .search-bar {
-    margin-right: 5px; /* Ajusta a margem direita da barra de pesquisa */
+    display: flex;
+    align-items: center; /* Alinha o ícone de pesquisa com o campo de entrada */
+    border-radius: 25px; /* Raio de borda para tornar a barra redonda */
+    border: 2px solid #232852; /* Adiciona uma borda sólida */
+    margin-right: 5px; /* Ajusta a margem direita */
+    background-color: transparent; /* Define o fundo do contêiner da barra de pesquisa como transparente */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse o raio da borda */
 }
 
 .search-bar input[type="text"] {
-    padding: 8px;
-    border: none;
-    border-bottom: 2px solid #AB1F2C;
-    font-size: 16px;
-    background-color: transparent;
-    transition: width 0.4s ease-in-out;
-}
-
-.search-bar input[type="text"]:focus {
-    width: 200px;
-    outline: none;
+    flex: 1; /* Permite que o input ocupe o espaço disponível */
+    padding: 8px 10px; /* Ajusta o preenchimento */
+    border: none; /* Remove a borda */
+    font-size: 16px; /* Tamanho da fonte */
+    background-color: transparent; /* Cor de fundo transparente */
+    margin: 0; /* Remove qualquer margem externa */
+    border-radius: 0; /* Remove o border-radius específico do input */
 }
 
 .search-bar button {
-    padding: 8px;
-    background-color: #AB1F2C;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 8px 12px; /* Ajusta o preenchimento */
+    background-color: #AB1F2C; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Muda o cursor para o ponteiro */
+    transition: background-color 0.3s ease; /* Transição suave */
 }
 
 .search-bar button:hover {
-    background-color: #AB1F2C;
+    background-color: darken(#AB1F2C, 10%); /* Escurece a cor de fundo ao passar o mouse */
 }
 
+
+
 .banner {
-    text-align: center;
-    padding: 200px;
-    height: 480px;
-    background-color: #f0f0f0;
-    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    width: 100%;
+    min-height: 450px; /* Ajuste para sua necessidade */
+    margin-top: 0; /* Garante que não há margem no topo */
+    
+
 }
+
+/* Ajustes para dispositivos móveis */
+
+    @media (max-width: 768px) {
+        .banner {
+            /* Define uma altura mínima específica para o banner em dispositivos móveis */
+            min-height: 100px; /* Ajuste este valor conforme necessário */
+        }
+    
+        .banner img {
+            /* Se a imagem do banner estiver sendo esticada ou distorcida, considere ajustar essas propriedades também */
+            height: auto; /* Garante que a altura da imagem se ajuste proporcionalmente à largura */
+            object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem ser distorcida */
+        }
+    }
+    
+
+
 
 .banner img {
     width: 100%;
-    height: 500px;
+    height: auto;
     object-fit: cover;
     position: absolute;
-    top: 0;
+    top: 0; /* Isso ajuda a alinhar a imagem no topo do contêiner */
     left: 0;
-    opacity: 0;
-    transition: opacity 1s ease;
+    transform: translate(0, 0); /* Ajustado para remover a translação */
 }
+
+
+
+
 
 .banner img:first-child {
     opacity: 1;
@@ -374,6 +482,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 13px;
+    color: #000;
 }
 
 .ponto img {
@@ -413,6 +523,7 @@
 }
 
 .separador {
+    margin-top: 0; 
     border: none;
     height: 0.7px;
     background-color: #232852;
@@ -428,14 +539,23 @@
     margin-left: 300px
 }
 
+
 .imagem-grande {
-    width: 450px;
+    width: 150px; /* Reduzido de 450px para 350px */
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura máxima do contêiner */
     padding: 18px;
     transition: transform 0.3s ease; /* Adiciona uma transição suave */
     margin-left: auto; /* Alinha a imagem ao centro horizontalmente */
     margin-right: auto; /* Alinha a imagem ao centro horizontalmente */
+    
 }
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* Faz com que o conteúdo do modal ocupe mais espaço na tela em dispositivos móveis */
+    }
+}
+
 
 
 
@@ -444,7 +564,8 @@
 }
 
 #imgSobre{
-    width: 300px;
+    width: 650px;
+    height: 350px;
 }
 
 #textoSobre{
@@ -452,7 +573,7 @@
 }
 
 #pSobre{
-    color: #AB1F2C;
+    color: #232852;
     font-weight: bold;
     font-size: 25px
 }
@@ -487,11 +608,13 @@
     margin-bottom: 20px; /* Adiciona um espaço abaixo de cada imagem */
 }
 
+
 .imagem-grande {
     width: auto; /* Mantém a largura original da imagem ou ajusta conforme necessário */
     height: auto; /* Ajusta a altura para ser consistente */
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
     object-fit: cover; /* Mantém a proporção da imagem sem cortá-la */
+   
 }
 
 .produto-info {
@@ -500,6 +623,7 @@
 }
 
 .textoInicial {
+    margin-top: 0;
     background-color: #e0e0e0; /* Cor de fundo suave para destacar a seção */
     padding: 40px 0; /* Espaçamento vertical para a seção */
     display: flex;
@@ -515,17 +639,116 @@
 
 .textoInicial h3 {
     font-weight: bold; /* Título em negrito */
-    font-size: 20px; /* Aumenta o tamanho do título */
+    font-size: 25px; /* Aumenta o tamanho do título */
     color: #232852; /* Cor escura para o título para contraste */
     margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
 .textoInicial p {
-    font-size: 13px; /* Tamanho confortável para leitura */
+    font-size: 15px; /* Tamanho confortável para leitura */
     line-height: 1.6; /* Espaçamento entre linhas */
     color: #555; /* Cor mais suave para o texto */
     margin-bottom: 25px; /* Espaço abaixo do parágrafo */
 }
+
+/* Estilo da modal */
+/* Estilo comum para centralizar modais */
+.modal, .modal-zoom {
+    display: none; /* Mantenha oculto inicialmente */
+    position: fixed; /* Posicionamento fixo na página */
+    z-index: 1050; /* Sobre outros itens */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escurecido */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.modal-content, .modal-zoom .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ou ajuste conforme necessário */
+    max-width: 600px; /* Máximo para desktop */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Animação para o modal aparecer deslizando de cima */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modal img {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura do modal-content */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 20px; /* Espaçamento entre o texto e a imagem, se necessário */
+}
+
+
+
+/* Ajusta o botão fechar para telas maiores */
+.close {
+    color: #aaaaaa;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    margin-top: 0; /* Remove a margem do topo do body */
+    margin: 0;
+    padding: 0;
+    padding-top: 1px;
+    
+}
+
+/* Certifique-se de que o primeiro elemento abaixo do navbar não tenha margem superior que possa criar um espaço */
+.primeiro-elemento-abaixo-do-navbar {
+    margin-top: 0; /* Ajuste o seletor conforme necessário */
+}
+
+
+/* Estilo da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilização do Modal */
+.modal { /* Seu CSS para o modal aqui */ }
+.modal-content { /* Seu CSS para o conteúdo do modal aqui */ }
+.close { /* Seu CSS para o botão fechar aqui */ }
+.color-option {
+  cursor: pointer;
+  width: 50px; /* Ajuste conforme necessário */
+  margin: 5px;
+  border: 1px solid #ddd; /* Adiciona uma borda para melhor visualização */
+}
+
+
 
 
 .container, .main_footer, .main_footer .content, .main_footer_copy, .secaoExtra {
@@ -633,7 +856,7 @@
 .botao:hover{
 
     border: 1px solid #262626;
-    color: #2adee3!important;
+    color: #232852!important;
 }
 .botao::before {
     content: '';
@@ -661,7 +884,7 @@
     width: 0%;
     height: 100%;
     display: block;
-    background: #2adee3;
+    background: #232852;
     position: absolute;
     -ms-transform: skewX(-15deg);
     -webkit-transform: skewX(-15deg); 
@@ -785,114 +1008,186 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
-    .search-bar, .social-links {
-        display: none;
+    .search-bar, .social-links, .dropdown {
+      display: none; /* Esconde elementos na navegação para telas menores */
     }
+  
     .menu-button {
-        margin-left: 20px;
+      display: block; /* Garante que o botão do menu fique visível */
     }
-    .logo, .menu-button {
-        display: block;
-    }
+  }
+  
+  /* Ajustes gerais para melhorar a legibilidade e apresentação */
+  body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .textoInicial {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center; /* Centraliza o conteúdo */
+  }
+  
+  .textoInicial .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .textoInicial h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .textoInicial p {
+    line-height: 1.6;
+  }
 
-    /* Estilos ajustados para os links sociais */
-    .social-links {
-        margin-right: 0;
-    }
-}
+  /* Estilos existentes */
+/* (Seus estilos CSS atuais vão aqui. Não os repita, apenas continue a partir do final do seu CSS.) */
 
+/* Ajustes de Responsividade */
 @media (max-width: 768px) {
-    footer .container {
-        flex-direction: column;
-        text-align: center;
+    /* Ajustes para a barra de navegação superior e a barra de navegação principal */
+    .top-navbar, .navbar {
+        position: static; /* Se necessário, ajuste a posição */
     }
 
-    .footer-section {
-        margin-bottom: 20px;
+    #logo img {
+        width: 50px; /* Reduz o tamanho do logo para dispositivos menores */
     }
-}
 
-/* CSS Original Mantido */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    .nav-links a {
+        font-size: 14px; /* Reduz o tamanho da fonte dos links */
+        padding: 10px 5px; /* Ajusta o padding */
+    }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
+    .dropdown-menu .dropdown-item {
+        font-size: 14px; /* Reduz o tamanho da fonte para os itens do dropdown */
+    }
 
-/* Estilos originais mantidos... */
+    /* Ajustes para a seção de produtos */
+    .produto {
+        flex-direction: column; /* Muda a direção do flex para coluna */
+    }
 
-/* Ajustes na Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    background-color: #232852;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    transition: all 0.3s ease;
-}
+    .produto img {
+        max-width: 100%; /* Ajusta a largura máxima da imagem */
+        margin-bottom: 10px; /* Adiciona espaço abaixo da imagem */
+    }
 
-#logo-img {
-    /* Ajuste para mover a logo mais para a esquerda */
-    flex-basis: 100px;
-}
+    /* Ajustes para o texto inicial e outras seções */
+    .textoInicial, .banner, .pontos, .banner-inferior {
+        padding: 20px 10px; /* Ajusta o padding */
+    }
 
-.nav-links, .social-links, .search-bar {
-    display: flex;
-    align-items: center;
-}
+    .textoInicial h3, .banner-inferior h2, .produto-info h3 {
+        font-size: 20px; /* Reduz o tamanho do título */
+    }
 
-/* Ajustando o espaçamento e alinhamento */
-.nav-links li, .social-links li {
-    margin-right: 20px;
-}
+    .textoInicial p, .banner-inferior p, .produto-info p {
+        font-size: 14px; /* Reduz o tamanho do texto */
+    }
 
-.nav-links li:last-child, .social-links li:last-child {
-    margin-right: 0;
-}
+    /* Ajustes para a barra de pesquisa, botões e outros elementos interativos */
+    .search-bar input[type="text"], .botao {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
 
-.dropdown img {
-    vertical-align: middle;
-    margin-right: 5px; /* Ajusta o espaçamento entre ícone e texto */
-}
+    .search-bar, .social-links, .dropdown {
+        display: block; /* Garante que estes elementos sejam exibidos */
+    }
 
-/* Responsividade */
-@media screen and (max-width: 992px) {
-    .nav-links, .search-bar, .social-links {
+    .menu-button {
+        display: inline-block; /* Garante que o botão do menu seja visível */
+    }
+
+    /* Esconde elementos que não são necessários em telas menores */
+    .dropdown-content, .social-link {
         display: none;
     }
+}
 
-    .menu-mobile {
-        display: block;
+/* Estilos para telas menores que 600px */
+/* Ajustes específicos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* Aumenta a largura do modal para dispositivos móveis */
+        margin: 10% auto; /* Ajusta a margem para melhor visualização em dispositivos móveis */
+    }
+    
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
         cursor: pointer;
     }
     
-    #logo-img {
-        margin-left: 20px; /* Ajusta conforme necessário para a logo */
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
     }
 }
+  
+    table {
+      display: block;
+      overflow-x: auto; /* Permite rolagem horizontal se a tabela for muito larga */
+    }
+  
+    th, td {
+      padding: 8px; /* Ajusta o padding para melhor visualização em telas menores */
+    }
+  
+  
+  /* Estilos para telas entre 600px e 768px */
+  @media (min-width: 601px) and (max-width: 768px) {
+    .modal-content {
+      width: 90%; /* Ajusta a largura do modal para telas de tamanho intermediário */
+    }
+  
+    .close {
+      font-size: 26px; /* Ajusta o tamanho para telas de tamanho intermediário */
+    }
+  
+    /* Adaptações adicionais para a tabela podem ser feitas aqui */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .modal-content {
+      width: 90%; /* Aumenta a largura para telas menores */
+    }
+  }
+  
+  /* Ajusta o tamanho das imagens dentro do modal */
+  .modal-content img {
+    max-width: 100%; /* Faz a imagem se ajustar ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+  }
 
-@media screen and (max-width: 768px) {
-    /* Ajustes específicos para tablets e dispositivos móveis */
+  @media (max-width: 768px) {
     .navbar {
-        justify-content: space-between; /* Garante que o menu e a logo estejam nos lados opostos */
+        display: flex;
+        justify-content: space-between; /* Distribui o espaço entre logo e menu */
+        align-items: center; /* Centraliza os itens verticalmente */
+        padding: 10px 15px; /* Ajusta o padding */
     }
-    
-    .menu-mobile {
-        display: block;
+
+    #logo-img {
+        width: 80px; /* Ajusta o tamanho da logo */
+        height: auto; /* Mantém a proporção */
+        margin-left: 0; /* Remove a margem esquerda, se houver */
+    }
+
+    .nav-links, .search-bar, .social-links, .dropdown {
+        display: none; /* Oculta elementos desnecessários */
+    }
+
+    .menu-button {
+        display: block; /* Exibe o botão do menu */
+        margin-right: 0; /* Ajusta a margem direita */
     }
 }
-
-/* Adicione aqui mais estilos originais e ajustes conforme necessário */
-
