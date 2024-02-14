@@ -194,7 +194,8 @@ body {
     min-width: 160px;
     z-index: 1;
     border-radius: 7px;
-    
+    left: -20px; /* Ajusta a posição do menu dropdown para a esquerda */
+    top: 100%; /* Posiciona o menu dropdown abaixo do botão dropdown */
 }
 
 .dropdown-menu .dropdown-item {
@@ -239,6 +240,7 @@ body {
 .dropdown-menu.show {
     display: block;
 }
+
 
 
 #socialImg {

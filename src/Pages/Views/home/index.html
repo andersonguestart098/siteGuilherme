@@ -488,49 +488,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
         </script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var menuButton = document.getElementById("menuButton");
-        var dropdownMenu = document.getElementById("mobileDropdown");
+document.addEventListener("DOMContentLoaded", function() {
+    var menuButton = document.getElementById("menuButton");
+    var dropdownMenu = document.getElementById("mobileDropdown");
 
-        menuButton.addEventListener("click", function(event) {
-            event.stopPropagation(); // Impede que o evento de clique seja propagado para o window
+    menuButton.addEventListener("click", function(event) {
+        event.stopPropagation(); // Impede que o evento de clique seja propagado para o window
 
-            var rect = menuButton.getBoundingClientRect(); // Obtém as coordenadas do botão de menu
+        var rect = menuButton.getBoundingClientRect(); // Obtém as coordenadas do botão de menu
 
-            // Define a posição horizontal do menu dropdown
-            var leftPosition = rect.left - dropdownMenu.offsetWidth + menuButton.offsetWidth;
-            dropdownMenu.style.left = leftPosition + "px";
+        // Define a posição horizontal do menu dropdown
+        var leftPosition = rect.left -50; // Mantém a posição horizontal igual à esquerda do botão de menu
+        dropdownMenu.style.left = leftPosition + "px";
 
-            // Define a posição vertical do menu dropdown
-            dropdownMenu.style.top = (rect.bottom + window.pageYOffset) + "px";
+        // Define a posição vertical do menu dropdown abaixo do botão de menu
+        var topPosition = rect.bottom - 43; // Ajuste a distância vertical do menu dropdown conforme necessário
+        dropdownMenu.style.top = topPosition + "px";
 
-            dropdownMenu.classList.toggle("show");
-        });
-
-        // Fecha o menu dropdown quando o usuário clica fora dele
-        window.addEventListener("click", function(event) {
-            if (!event.target.matches('#menuButton')) {
-                if (dropdownMenu.classList.contains('show')) {
-                    dropdownMenu.classList.remove('show');
-                }
-            }
-        });
+        dropdownMenu.classList.toggle("show");
     });
-</script>
 
+    // Fecha o menu dropdown quando o usuário clica fora dele
+    window.addEventListener("click", function(event) {
+        if (!event.target.matches('#menuButton')) {
+            if (dropdownMenu.classList.contains('show')) {
+                dropdownMenu.classList.remove('show');
+            }
+        }
+    });
+});
 
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-        
+</script>    
 </body>
 </html>
