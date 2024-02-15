@@ -1,5 +1,5 @@
- /* CSS Original */
- * {
+/* CSS Original */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,6 +30,7 @@
     max-width: 1300px;
     margin: 0 auto; /* Centraliza o conteúdo */
     padding: 2px;
+
 }
 
 /* Estilização existente */
@@ -377,8 +378,7 @@ body {
 
     @media (max-width: 768px) {
         .banner {
-            /* Define uma altura mínima específica para o banner em dispositivos móveis */
-            min-height: 100px; /* Ajuste este valor conforme necessário */
+            height: 250px; /* ou qualquer altura desejada para dispositivos móveis */
         }
     
         .banner img {
@@ -679,7 +679,7 @@ body {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Ou ajuste conforme necessário */
+    width: 90%; /* Ou ajuste conforme necessário */
     max-width: 600px; /* Máximo para desktop */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -700,12 +700,18 @@ body {
 
 /* Ajusta o botão fechar para telas maiores */
 .close {
-    color: #aaaaaa;
+    background-color: red;
+    border-radius: 9px;
+    width: 60px;
+    height: 60px;
+    color: red;
     position: absolute;
     top: 15px;
     right: 25px;
     font-size: 30px;
     font-weight: bold;
+    text-align: center; /* Centraliza horizontalmente */
+    line-height: 60px; /* Centraliza verticalmente */
 }
 
 .close:hover, .close:focus {
@@ -713,6 +719,7 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
 
 body {
     margin-top: 0; /* Remove a margem do topo do body */
@@ -1068,6 +1075,11 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1300px;
     margin: 0 auto; /* Centraliza o conteúdo */
     padding: 2px;
+}
+
+.top-navbar a, .top-navbar a:visited, .top-navbar a:hover, .top-navbar a:active {
+    color: inherit; /* Isso fará com que o link herde a cor do texto do seu elemento pai. */
+    text-decoration: none; /* Isso remove o sublinhado do link. */
 }
 
 /* Estilização existente */
@@ -1710,11 +1722,11 @@ body {
 
 /* Ajusta o botão fechar para telas maiores */
 .close {
-    color: #aaaaaa;
+    color: white;
     position: absolute;
-    top: 15px;
-    right: 25px;
-    font-size: 30px;
+    top: 20px;
+    right: 35px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -2071,8 +2083,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #imgMenu{
-    width: 40px;
-    margin-top: 10px;
+    width: 35px;
+    margin-top: 12px;
 }
 
 /* Base styles */
@@ -2129,25 +2141,51 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.logo {
-    width: 110px; /* Tamanho padrão da logo */
-    height: auto; /* Mantém a proporção */
+/* Estilos existentes */
+.logo img {
+    width: 80px; /* Tamanho atual para mobile */
+    height: auto; /* Mantém a proporção da imagem */
+}
 
-    /* Tamanho maior apenas para telas maiores que 768px */
-    @media (min-width: 769px) {
-        width: 150px; /* Tamanho maior para telas maiores */
+/* Media query para telas maiores que 768px (versão desktop) */
+@media (min-width: 768px) {
+    .logo img {
+        width: 120px; /* Tamanho maior para a versão desktop */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-left: 160px;
     }
 
-    /* Margem apenas para telas maiores que 768px */
-    @media (min-width: 769px) {
-        margin-left: 300px;
+    #numeroTelefone{
+        margin-left: 116px;
     }
+    
+}
+
+/* Estilo padrão para imagens (desktop) */
+.banner-img {
+    width: 100%;
+    display: block; /* Ou "none" se você quiser ocultar inicialmente */
 }
 
 
+/* Estilo comum para o banner de fundo */
+/* Estilo comum para todos os banners de fundo */
+.banner-bg {
+    width: 100%;
+    height: 300px; /* Ajuste conforme necessário */
+    background-size: cover;
+    background-position: center;
+    display: none; /* Oculta todos inicialmente */
+}
 
+/* Media Query para Desktop */
+@media (min-width: 769px) {
+    .desktop-bg { display: block; } /* Exibe somente as imagens de desktop */
+}
 
-
-
+/* Media Query para Mobile */
+@media (max-width: 768px) {
+    .mobile-bg { display: block; } /* Exibe somente as imagens de mobile */
+}
 
 

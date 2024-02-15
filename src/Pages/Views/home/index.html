@@ -23,25 +23,22 @@
     <div class="header-container">
     <div class="top-navbar">
             <div class="container">
-                <p style="margin-left: 7px;"> +55 (51) 90000-0000 | contato@okafloor.com.br</p>
+                <p id="numeroTelefone" > +55 (51) 90000-0000 | contato@okafloor.com.br</p>
             </div>
         </div>
         <nav class="navbar">
-            <div class="logo">
-                <img src="/public/Marca D_água Preta.png" alt="Logo" style="width: 80px;"> <!-- Ajuste o caminho e o tamanho conforme necessário -->
+            <div class="logo" id="logoTopo">
+                <img src="/public/Marca D_água Preta.png" alt="Logo"> <!-- Ajuste o caminho conforme necessário -->
             </div>
             <button class="menu-button" id="menuButton">
-                <img src="/public/menu3.png" alt="Menu" id="imgMenu"> <!-- Ajuste o caminho conforme necessário -->
+                <img src="/public/menu00.png" alt="Menu" id="imgMenu"> <!-- Ajuste o caminho conforme necessário -->
             </button>
 <div class="dropdown-menu" id="mobileDropdown" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Produtos</a>
-        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Categorias</a>
-        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Contato</a>
-        <a class="dropdown-item" href="#"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Porque a Oka?</a>
-        <a class="dropdown-item" href="#">
-            <img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">
-            Fale Conosco
-        </a>
+        <a class="dropdown-item" href="#produto"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Produto Destaque</a>
+        <a class="dropdown-item" href="#textoSobre"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Sobre a OKA</a>
+        <a class="dropdown-item" href="#extra"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Cores</a>
+        <a class="dropdown-item" href="#footer"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">Contato</a>
+        
     </div>
 
 
@@ -78,9 +75,9 @@
     <main>
         <section class="banner">
             <div class="container">
-                <img src="/public/thumbnail_banner10_resized.png" alt="Banner 1" class="banner-img">
-                <img src="/public/thumbnail_banner15.jpg" alt="Banner 2" class="banner-img">
-                <img src="/public/thumbnail_banner16.jpg" alt="Banner 3" class="banner-img">
+                <img src="/public/thumbnail_banner10_resized.png" alt="Banner 1" class="banner-img" id="banner1">
+                <img src="/public/thumbnail_banner15.jpg" alt="Banner 2" class="banner-img" id="banner2">
+                <img src="/public/thumbnail_banner16.jpg" alt="Banner 3" class="banner-img" id="banner3">
             </div>
         </section>
        
@@ -104,7 +101,7 @@
     <section>
           <div class="container">
                 
-                <div class="produto" data-aos="fade-up">
+                <div class="produto" id="produto" data-aos="fade-up">
                     <img src="/public/pisoVesuvio.jpg" alt="Produto 1" style="width: 110px;">
                     <div class="produto-info">
                         <h3>Vesúvio grey</h3>
@@ -206,7 +203,7 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
 
         <hr class="separador" data-aos="fade-up">
     
-        <section class="extra" data-aos="fade-up">
+        <section class="extra" id="extra" data-aos="fade-up">
             <div class="container">
                 <div class="imagem">
                     <img src="/public/piso1_resized.jpg" alt="imagem1" class="imagem-grande">
@@ -233,7 +230,7 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
         <!-- Modal Zoom para Imagens -->
         <div id="imagemZoomModal" class="modal-zoom">
             <span class="close">&times;</span>
-            <img class="modal-content" id="imagemZoom">
+            <img class="modal-content-zoom" id="imagemZoom">
             <div id="captionZoom"></div>
         </div>
         
@@ -277,7 +274,7 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
         
                 </div><!--Col Footer 2-->
         
-                <div class="colfooter">
+                <div class="colfooter" id="footer">
                    
                    <h3 class="titleFooter"> Redes Sociais</h3>
                     
@@ -518,6 +515,50 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-</script>    
+</script>  
+<script>
+    function updateBannerImages() {
+        var screenWidth = window.innerWidth;
+        var banner1 = document.getElementById('banner1');
+        var banner2 = document.getElementById('banner2');
+        var banner3 = document.getElementById('banner3');
+
+        if (screenWidth <= 768) {
+            banner1.src = "/public/bannerMobile.png";
+            banner2.src = "/public/bannerMobile2.jpg";  //muda as imagens do banner conforma o dispositvo (web/mobile)
+            banner3.src = "/public/bannerMobile3.jpg";
+        } else {
+            banner1.src = "/public/thumbnail_banner10_resized.png";
+            banner2.src = "/public/thumbnail_banner15.jpg";
+            banner3.src = "/public/thumbnail_banner16.jpg";
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", updateBannerImages);
+    window.addEventListener("resize", updateBannerImages);
+</script>
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const yOffset = -210; // Ajuste este valor conforme necessário para centralizar a seção
+        const element = document.querySelector(this.getAttribute('href'));
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+        window.scrollTo({top: y, behavior: 'smooth'});
+    });
+});
+
+    </script>
+    <script>
+        document.getElementById('logoTopo').addEventListener('click', function() { //animação topo página
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        </script>
+    
+
 </body>
 </html>
