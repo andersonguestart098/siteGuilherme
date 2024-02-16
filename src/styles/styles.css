@@ -480,8 +480,16 @@ body {
     justify-content: space-around;
     padding: 50px 0;
     background-color: #d3d3d3;
-    height: 200px;
-    margin-bottom: 100px;
+    height: 300px;
+
+}
+
+.pontos p {
+    margin-top: 5px;
+}
+
+.pontos img {
+    margin-top: -30px;
 }
 
 .ponto {
@@ -517,9 +525,37 @@ body {
     animation-play-state: paused;
 }
 
+/* Base styles for the banner */
 .banner-inferior {
-    min-height: 200px;
+    width: 100%; /* Ensure full width */
+    overflow: hidden; /* Prevent overflow */
+    position: relative; /* For positioning inner elements */
+    /* Add more styles as needed */
 }
+
+/* Adjust the banner's height dynamically */
+.banner-inferior img {
+    transition: none; /* Remove o efeito de transição */
+}
+
+/* Ajusta o banner-inferior e o footer para preencherem a largura da tela */
+.banner-inferior, .main_footer {
+    width: 100%; /* Garante que ocupe toda a largura da tela */
+    overflow: hidden; /* Evita overflow horizontal */
+}
+
+/* Certifique-se de que o conteúdo dentro do banner-inferior e do footer não exceda a largura da tela */
+.banner-inferior > *, .main_footer > * {
+    max-width: 100%; /* Limita a largura máxima dos elementos filhos */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+/* Para evitar scroll horizontal em toda a página */
+html, body {
+    overflow-x: hidden; /* Esconde o overflow horizontal */
+    max-width: 100%; /* Limita a largura máxima para evitar scroll horizontal */
+}
+
 
 .banner-inferior h2 {
     margin-bottom: 20px;
@@ -706,13 +742,14 @@ body {
     height: 60px;
     color: red;
     position: absolute;
-    top: 15px;
+    top: 10px; /* Ajustado para 10px para ficar mais acima */
     right: 25px;
     font-size: 30px;
     font-weight: bold;
     text-align: center; /* Centraliza horizontalmente */
     line-height: 60px; /* Centraliza verticalmente */
 }
+
 
 .close:hover, .close:focus {
     color: #000;
@@ -737,19 +774,48 @@ body {
 
 /* Estilo da tabela */
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
+/* Estilo do cabeçalho */
 th {
-  background-color: #f2f2f2;
+    background-color: #232852; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 12px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento do texto */
 }
+
+/* Estilo das células */
+/* Estilo da tabela */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+/* Estilo do cabeçalho */
+th {
+    background-color: #232852 !important; /* Cor de fundo do cabeçalho */
+    color: #fff !important; /* Cor do texto do cabeçalho */
+    padding: 12px !important; /* Espaçamento interno */
+    text-align: left !important; /* Alinhamento do texto */
+}
+
+/* Estilo das células */
+td {
+    border: 1px solid #ddd !important; /* Borda das células */
+    padding: 12px !important; /* Espaçamento interno */
+    text-align: left !important; /* Alinhamento do texto */
+}
+
+/* Estilo das células de dados alternadas */
+tr:nth-child(even) {
+    background-color: #f2f2f2 !important; /* Cor de fundo das linhas pares */
+}
+
+
+
+
 
 /* Estilização do Modal */
 .modal { /* Seu CSS para o modal aqui */ }
@@ -1214,15 +1280,17 @@ body {
     min-width: 160px;
     z-index: 1;
     border-radius: 7px;
+    margin-right: 10px;
     
 }
 
 .dropdown-menu .dropdown-item {
     color: #232852;
     padding: 15px 16px;
-    text-decoration: none;
+    text-decoration: none; /* ajusta o conteúdo do menu*/
     display: block;
     transition: background-color 0.3s ease;
+    margin-right: 10px;
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -1724,7 +1792,7 @@ body {
 .close {
     color: white;
     position: absolute;
-    top: 20px;
+    top: 3px;
     right: 35px;
     font-size: 50px;
     font-weight: bold;
@@ -2156,8 +2224,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #numeroTelefone{
-        margin-left: 116px;
+        margin-left: -120px;
     }
+
+ 
+
     
 }
 
@@ -2188,4 +2259,155 @@ h1, h2, h3, h4, h5, h6 {
     .mobile-bg { display: block; } /* Exibe somente as imagens de mobile */
 }
 
+.imagem-grande {
+    border-radius: 9px; /* Ajuste o valor conforme desejado */
+    /* Outros estilos que você já tem aplicado */
+}
 
+#searchResults {
+    position: fixed; /* Altera de absolute para fixed para mover com a tela */
+    top: 125px; /* Ajusta para a posição desejada abaixo do navbar */
+    left: auto; /* Mantém à direita ou ajusta conforme necessário */
+    right: 20px; /* Posiciona à direita da tela, ajuste conforme necessário */
+    width: 300px; /* Mantém a largura conforme necessário */
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1050; /* Certifique-se de que está acima do navbar */
+    max-height: 400px;
+    overflow-y: auto; /* Permite rolagem dentro do contêiner se o conteúdo exceder a altura máxima */
+    border-radius: 9px;
+    margin-right: 280px; /* Remove o ajuste específico de margem esquerda */
+}
+
+@media (max-width: 767px) {
+    #searchResults {
+        display: none;
+    }
+}
+
+
+.result-item {
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    padding: 8px; /* Ajuste o padding conforme necessário */
+    border-bottom: 1px solid #ddd; /* Linha separadora entre os resultados */
+}
+
+.result-item strong {
+    font-weight: bold;
+    color: #232852; /* Cor do texto "Resultado X" */
+}
+
+.result-item span {
+    color: #232852; /* Cor do texto após os ":" */
+}
+
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .extra .container .imagem {
+        justify-content: space-around; /* Distribui o espaço uniformemente ao redor dos itens */
+    }
+
+    .extra .imagem-grande {
+        margin: 0 10px; /* Adiciona uma margem lateral para evitar que as imagens toquem as bordas */
+        max-width: calc(100% - 35px); /* Reduz a largura máxima para considerar as margens laterais */
+        
+        padding: 1px;
+        font-size: 10px;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .extra .produto-info h3 {
+        font-size: 14px; /* Ajusta o tamanho da fonte conforme necessário */
+    }
+}
+
+  
+/* Base styles for banner inferior and footer */
+.banner-inferior, .main_footer {
+    /* Your base CSS here */
+}
+
+/* Media queries for smaller devices */
+@media (max-width: 768px) {
+    .banner-inferior, .main_footer {
+        /* Adjustments for smaller screens */
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* Estilo para a seção sobre */
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px; /* Adiciona padding para espaçamento */
+    margin-top: -60px;
+}
+
+/* Estilo para o texto dentro da seção sobre */
+.sobre .info {
+    flex: 1 1 850px; /* Permite que o texto ocupe até 800 de largura */
+    max-width: 850px; /* Limita a largura máxima do texto */
+    margin: 0 20px; /* Adiciona margem para espaçamento */
+    font-size: 15px;
+    color: #555;
+}
+
+/* Estilo para a imagem dentro da seção sobre */
+.sobre .imgInfo {
+    flex: 1 1 500px; /* Permite que a imagem ocupe até 300px de largura */
+    max-width: 800px; /* Limita a largura máxima da imagem */
+    margin: 20px; /* Adiciona margem para espaçamento */
+    
+}
+
+/* Ajustes para telas pequenas (dispositivos móveis) */
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column; /* Organiza o conteúdo em coluna para dispositivos móveis */
+    }
+
+    .sobre .info, .sobre .imgInfo {
+        flex-basis: auto; /* Permite que o conteúdo ajuste sua largura automaticamente */
+        max-width: 100%; /* Ocupa 100% da largura disponível */
+        margin: 10px 0; /* Ajusta a margem para dispositivos móveis */
+    }
+}
+
+#detalhesBtn{
+    background-color: #232852;
+    font-size: 15px;
+    color: white;
+    border-radius: 9px;
+    width: 140px;
+    height: 45px;
+}
+
+.modal-content {
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+  }
+  
+  table {
+    width: 100%; /* Ajusta a largura da tabela para preencher o contêiner */
+    border-collapse: collapse; /* Remove os espaços entre as bordas das células */
+  }
+  
+  th, td {
+    border: 1px solid #ddd; /* Estiliza as bordas das células */
+    padding: 8px; /* Adiciona preenchimento interno às células */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  @media (max-width: 768px) {
+    .modal-content {
+      padding: 10px; /* Reduz o preenchimento no modal para dispositivos móveis */
+    }
+  }
+  

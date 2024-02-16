@@ -2,10 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ensure this meta tag is present for responsive design -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OKAfloor</title>
     <link rel="icon" href="/public/Símbolo Folha Preto.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -46,16 +43,17 @@
                 <div class="right-section">
 
                 
-                <!-- Barra de Pesquisa -->
-                <li class="search-bar">
-                    <div style="display: flex; align-items: center;">
-                        <input type="text" placeholder="Pesquisar" style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px 0 0 4px; outline: none;">
-                        <button type="submit" style="background-color: transparent; border: none; cursor: pointer; border-radius: 0 4px 4px 0;">
+                    <li class="search-bar">
+                        <div style="display: flex; align-items: center; position: relative;">
+                          <input type="text" id="searchInput" placeholder="Search...">
+                          <button type="submit" id="searchButton" style="background-color: transparent; border: none; cursor: pointer; border-radius: 0 4px 4px 0;">
                             <img src="/public/lupa.png" alt="Pesquisar" style="width: 25px; height: 25px;">
-                        </button>
-                    </div>
-                </li>
-            </div>
+                          </button>
+                        </div>
+                         <!-- Moved outside the flex container but still inside the li -->
+                      </li>
+
+                  
 
 
                 <div class="right-section">
@@ -70,6 +68,7 @@
 
             </div>
         </nav>
+        <div id="searchResults"></div>
     </header>
     
     <main>
@@ -79,10 +78,12 @@
                 <img src="/public/thumbnail_banner15.jpg" alt="Banner 2" class="banner-img" id="banner2">
                 <img src="/public/thumbnail_banner16.jpg" alt="Banner 3" class="banner-img" id="banner3">
             </div>
+            <div class="navigation-dots"></div>
+
         </section>
        
         <hr class="separador">
-        <section class="textoInicial">
+        <section class="textoInicial searchable"data-section-name="Conceito" id="Conceito" ata-target="#Conceito">
             <div class="container">
                 <div class="produto-info">
                     <h3>Pisos Laminados Oka: Elegância Natural Inspirada em Madeiras Autênticas</h3>
@@ -99,7 +100,7 @@
         <hr class="separador"  data-aos="fade-up">
         <br/>
     <section>
-          <div class="container">
+        <div class="container searchable" data-section-name="Produto" id="Produto" ata-target="#Produto">
                 
                 <div class="produto" id="produto" data-aos="fade-up">
                     <img src="/public/pisoVesuvio.jpg" alt="Produto 1" style="width: 110px;">
@@ -107,7 +108,7 @@
                         <h3>Vesúvio grey</h3>
                         <p>
                             Atacado de alta qualidade para uso interno.</p>
-                            <button id="detalhesBtn">Detalhes</button>
+                            <button id="detalhesBtn">Ver Detalhes</button>
                     </div>
                 </div>
                 <div id="detalhesModal" class="modal">
@@ -150,9 +151,9 @@
         <hr class="separador" data-aos="fade-up">
         <br/><br/><br/><br/>
 
-        <section class="sobre" style="display: flex; align-items: center; justify-content: center; gap: 40px; padding: 0 20px;" data-aos="fade-up">
-            <div class="content-wrapper" style="display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 100%; text-align: center;">
-                <div class="info" style="max-width: 50%; text-align: left; padding-left: 20px;">
+        <section class="sobre searchable" data-section-name="Sobre" id="Sobre" ata-target="#Sobre"  data-aos="fade-up">
+            <div class="content-wrapper" >
+                <div class="info" >
                 
                     <p id="textoSobre">
                         <p id="pSobre">Quem nós somos</p>
@@ -169,18 +170,18 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
                     </p>
                 </div>
                 <br/>
-                <div class="imgInfo" style="max-width: 90%; margin-top: 20px;">
+                <div class="imgInfo">
                     <img src="/public/ponto2.png" id="imgSobre" alt="Ponto 2" style="max-width: 100%; height: auto;">
                 </div>
             </div>
            
         </section>
         <br/>
-        <section class="pontos" data-aos="fade-up">
+        <section class="pontos searchable" data-section-name="Pontos Fortes" id="Pontos Fortes" ata-target="#Pontos Fortes" data-aos="fade-up">
             <div class="ponto">
                 <img src="/public/piso (1).png" alt="Ponto 1">
                 <h3 class="pontosTitulo">Brilho Excepcional</h3>
-<p>Nossos pisos laminados gloss destacam-se pelo brilho excepcional.</p>
+<p>Destacam-se pelo brilho excepcional.</p>
 
 
             </div>
@@ -192,7 +193,7 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
             <div class="ponto">
                 <img src="/public/lampada1.png" alt="Ponto 3">
                 <h3 class="pontosTitulo">Foco em Sustentabilidade</h3>
-                <p>Contribuindo com a sustentabilidade do planeta e consciência ambiental.</p>
+                <p>Sustentabilidade do planeta e consciência ambiental.</p>
             </div>
             <div class="ponto">
                 <img src="/public/natureza (1).png" alt="Ponto 4">
@@ -203,7 +204,7 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
 
         <hr class="separador" data-aos="fade-up">
     
-        <section class="extra" id="extra" data-aos="fade-up">
+        <section class="extra searchable" data-section-name="Cores disponíveis" id="extra" id="Cores disponíveis" ata-target="#Cores disponíveis" data-aos="fade-up">
             <div class="container">
                 <div class="imagem">
                     <img src="/public/piso1_resized.jpg" alt="imagem1" class="imagem-grande">
@@ -238,7 +239,7 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
        
         <hr class="separador" data-aos="fade-up">
         <br/><br/><br/><br/>
-        <section class="banner-inferior" id="banner-images" data-aos="fade-up">
+        <section class="banner-inferior" id="banner-images">
             <!-- Conteúdo do banner inferior aqui -->
 
             <img src="/public/banner6.jpg" alt="Banner 1" class="banner-inferior" style="width: 100%;">
@@ -250,7 +251,7 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
     
             <div class="content">
         
-                <div class="colfooter">
+                <div class="colfooter ">
                     
                     <h3 class="titleFooter"> Menu</h3>
                     
@@ -265,7 +266,7 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
         
                 </div><!--Col Footer 1-->        
         
-                <div class="colfooter">
+                <div class="colfooter searchable" data-section-name="Contato" id="Contato" ata-target="#Contato">
                    
                    <h3 class="titleFooter"> Contato</h3>
                    <p><i class="icon icon-mail"></i> contato@okafloor.com.br</p>
@@ -274,7 +275,7 @@ Estamos sempre com foco em novos produtos e tecnologias para oferecer o que há 
         
                 </div><!--Col Footer 2-->
         
-                <div class="colfooter" id="footer">
+                <div class="colfooter " id="footer">
                    
                    <h3 class="titleFooter"> Redes Sociais</h3>
                     
@@ -550,15 +551,84 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
     </script>
+   <script>
+document.getElementById('searchButton').addEventListener('click', function(event) {
+    event.stopPropagation(); // Prevents the window click listener from immediately hiding the results
+    const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+    const contentItems = document.querySelectorAll('.searchable');
+    const searchResults = document.getElementById('searchResults');
+
+    searchResults.innerHTML = ''; // Clear previous results
+
+    let resultCount = 0;
+    contentItems.forEach((item, index) => {
+        if (item.textContent.toLowerCase().includes(searchQuery)) {
+            resultCount++;
+            const resultItem = document.createElement('div');
+            resultItem.classList.add('result-item');
+            resultItem.innerHTML = `<strong>${searchQuery}</strong> encontrado em: <span>${item.getAttribute('data-section-name')}</span>`;
+            resultItem.addEventListener('click', () => {
+                const sectionId = item.getAttribute('id');
+                const yOffset = -212; // Adjust this value based on your fixed header's height
+                const element = document.getElementById(sectionId);
+                const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({top: y, behavior: 'smooth'});
+                searchResults.style.display = 'none'; // Hide the results after clicking
+            });
+            searchResults.appendChild(resultItem);
+        }
+    });
+
+    if (resultCount === 0) {
+        searchResults.innerHTML = '<p>Nenhum resultado encontrado.</p>';
+    }
+
+    if (searchQuery) {
+        document.getElementById('searchResults').style.display = 'block'; // Only display results if there is a search query
+    }
+});
+
+// Hide the results when clicking outside, but don't hide when clicking the search button itself
+window.addEventListener('click', function(event) {
+    if (!event.target.closest('.search-bar') && !event.target.closest('#searchButton')) {
+        document.getElementById('searchResults').style.display = 'none';
+    }
+});
+
+    </script>
+    
     <script>
-        document.getElementById('logoTopo').addEventListener('click', function() { //animação topo página
+        document.getElementById('logoTopo').addEventListener('click', function() {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
         });
         </script>
-    
+
+        <script>
+            contentItems.forEach((item, index) => {
+    if (item.textContent.toLowerCase().includes(searchQuery)) {
+        resultCount++;
+        const resultItem = document.createElement('div');
+        resultItem.classList.add('result-item');
+        // Dividindo o texto em "Resultado X" em negrito e o resto em preto
+        resultItem.innerHTML = `<strong>Resultado ${resultCount}:</strong><span> ${item.getAttribute('data-section-name')}</span>`;
+        resultItem.addEventListener('click', () => {
+            const sectionId = item.getAttribute('id');
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        searchResults.appendChild(resultItem);
+    }
+});
+
+        </script>
+        
+        
+        
 
 </body>
 </html>
