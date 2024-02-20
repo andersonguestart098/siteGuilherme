@@ -1,4 +1,3 @@
-/* CSS Original */
 * {
     margin: 0;
     padding: 0;
@@ -7,85 +6,77 @@
 
 .top-navbar {
     display: flex;
-    background-color: #fff; /* Cor de fundo alterada para branco */
-    color: #000; /* Cor do texto alterada para preto, se necessário */
-    font-size: 12px; /* Tamanho do texto */
+    background-color: #fff; 
+    color: #000;
+    font-size: 12px; 
     font-family: "Exo", "Lucida Console", "Monaco", monospace;
     color: #818381;
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 7px 0; /* Espaçamento interno */
-    width: 100%; /* Assegura que ocupe toda a largura */
+    text-align: center; 
+    padding: 7px 0; 
+    width: 100%;
     
-    top: 0; /* Posiciona no topo da página */
-    z-index: 2000; /* Garante que esteja acima do navbar */
-    height: 45px; /* Altura definida */
-    border-bottom: 1px solid #E5E5E5; /* Adiciona borda preta na margem inferior */
+    top: 0; 
+    z-index: 2000;
+    height: 45px;
+    border-bottom: 1px solid #E5E5E5;
    
-    border-top: 3px solid #232852; /* Adiciona uma barra fina preta acima da top-navbar */
+    border-top: 3px solid #232852; 
 }
-
 
 .top-navbar .container {
     width: 90%;
     max-width: 1300px;
-    margin: 0 auto; /* Centraliza o conteúdo */
+    margin: 0 auto;
     padding: 2px;
 
 }
-
-/* Estilização existente */
-
 
 .top-navbar {
     display: flex;
-    background-color: #fff; /* Cor de fundo alterada para branco */
-    color: #000; /* Cor do texto alterada para preto, se necessário */
-    font-size: 12px; /* Tamanho do texto */
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
     font-family: "Exo", "Lucida Console", "Monaco", monospace;
     color: #818381;
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 7px 0; /* Espaçamento interno */
-    width: 100%; /* Assegura que ocupe toda a largura */
+    text-align: center;
+    padding: 7px 0;
+    width: 100%;
     
-    top: 0; /* Posiciona no topo da página */
-    z-index: 2000; /* Garante que esteja acima do navbar */
-    height: 45px; /* Altura definida */
-    border-bottom: 1px solid #E5E5E5; /* Adiciona borda preta na margem inferior */
+    top: 0;
+    z-index: 2000;
+    height: 45px; 
+    border-bottom: 1px solid #E5E5E5;
    
-    border-top: 3px solid #232852; /* Adiciona uma barra fina preta acima da top-navbar */
+    border-top: 3px solid #232852;
 }
-
 
 .top-navbar .container {
     width: 90%;
     max-width: 1300px;
-    margin: 0 auto; /* Centraliza o conteúdo */
+    margin: 0 auto;
     padding: 2px;
 }
 
-/* Estilização existente */
-
-
 .navbar {
-    background-color: #fff; /* Cor de fundo alterada para branco */
+    background-color: #fff;
     width: 100%;
     height: 112px;
     z-index: 1000;
-    color: #000; /* Cor do texto, ajuste conforme necessário */
+    color: #000;
     padding: 0 15px;
     transition: all 0.3s ease;
     display: flex; 
     justify-content: space-between;
     align-items: center;
     border-bottom: 2.5px solid #E5E5E5;
-    position: relative; /* Ajuste para garantir que fique fixo */
-    top: 0; /* Fixa o navbar no topo da página */
-    left: 0; /* Garante que o navbar esteja alinhado à esquerda */
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-/* Ajuste adicional para garantir que o conteúdo da página não fique escondido atrás do navbar quando ele estiver fixo */
+
 body {
-    padding-top: 112px; /* Ajuste este valor conforme a altura do seu navbar */
+    padding-top: 112px;
 }
 
 
@@ -104,15 +95,15 @@ body {
 .logo {
   
     display: flex;
-    width: 110px; /* Ou qualquer outro tamanho padrão */
-    height: auto; /* Mantém a proporção */
+    width: 110px;
+    height: auto;
 }
 
 .nav-links {
     list-style: none;
     margin-right: 20px;
     display: flex;
-    align-items: center; /* Adiciona alinhamento vertical dos elementos */
+    align-items: center;
 }
 
 .nav-links li {
@@ -169,7 +160,7 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 20px; /* Ajusta a margem direita do botão dropdown */
+    margin-right: 20px;
     margin-left: 20px;
     font-size: 10px;
 }
@@ -191,8 +182,8 @@ body {
     min-width: 160px;
     z-index: 1;
     border-radius: 7px;
-    left: -20px; /* Mantém a posição ajustada para a esquerda */
-    top: 100%; /* Mantém o menu dropdown posicionado abaixo do botão dropdown */
+    left: -20px;
+    top: 100%;
 }
 
 .dropdown-menu .dropdown-item {
@@ -202,9 +193,9 @@ body {
     display: block;
 }
 
-/* Aqui, simplificamos o efeito de hover para apenas mudar a cor do fundo */
+
 .dropdown-menu .dropdown-item:hover {
-    background-color: #eee; /* Muda para uma cor mais clara em vez de #444 */
+    background-color: #eee;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -217,7 +208,7 @@ body {
 }
 
 .menu-button:hover {
-    transform: scale(1.1); /* Aumenta a escala ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .dropdown-content {
@@ -247,16 +238,15 @@ body {
 }
 .social-links img {
     display: block;
-    width: auto; /* Ajuste a largura conforme necessário */
-    height: 32px; /* Ajuste a altura conforme necessário */
+    width: auto;
+    height: 32px;
 }
 
-/* Se estiver usando flexbox na .social-links, ajuste o gap conforme necessário */
 .social-links {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Ajuste este valor para controlar o espaçamento entre os ícones */
+    gap: 10px;
 }
 
 .social-link {
@@ -275,23 +265,23 @@ body {
 }
 
 .social-links a:hover::after {
-    transform: scale(1.2); /* Cor desejada para a animação */
+    transform: scale(1.2);
 }
 
 .social-links a {
-    margin: 0 5px; /* Ajuste o valor conforme necessário para reduzir o espaçamento */
+    margin: 0 5px;
     padding: 0;
 }
 
 .social-links a:hover {
-    transform: scale(1.1); /* Zoom de 10% ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .social-links a:last-child {
-    margin-right: 0; /* Remove a margem direita do último ícone */
+    margin-right: 0;
 }
 
-/* Remove o margin-right adicional */
+
 .social-link, .social-links a {
     margin-right: 0 !important;
 }
@@ -304,20 +294,20 @@ body {
     width: 100%;
     height: 2px;
     background-color: transparent;
-    transition: transform 0.3s ease; /* Alterada a propriedade de transição */
-    transform-origin: bottom right; /* Define o ponto de origem para evitar mover o background */
+    transition: transform 0.3s ease;
+    transform-origin: bottom right;
 }
 
 .dropdown-menu a:hover::after {
-    transform: scaleX(1.2); /* Apenas escala horizontalmente para manter a altura do item */
+    transform: scaleX(1.2);
 }
 
 .dropdown-menu a {
-    transition: transform 0.3s ease; /* Transição suave de 0.3 segundos */
+    transition: transform 0.3s ease;
 }
 
 .dropdown-menu a:hover {
-    transform: scale(1.1); /* Zoom de 10% ao passar o mouse */
+    transform: scale(1.1);
 }
 
 
@@ -326,36 +316,36 @@ body {
 
 .search-bar {
     display: flex;
-    align-items: center; /* Alinha o ícone de pesquisa com o campo de entrada */
-    border-radius: 25px; /* Raio de borda para tornar a barra redonda */
-    border: 2px solid #232852; /* Adiciona uma borda sólida */
-    margin-right: 5px; /* Ajusta a margem direita */
-    background-color: transparent; /* Define o fundo do contêiner da barra de pesquisa como transparente */
-    overflow: hidden; /* Impede que o conteúdo ultrapasse o raio da borda */
+    align-items: center; 
+    border-radius: 25px;
+    border: 2px solid #232852;
+    margin-right: 5px;
+    background-color: transparent;
+    overflow: hidden;
     margin-right: 20px;
 }
 
 .search-bar input[type="text"] {
-    flex: 1; /* Permite que o input ocupe o espaço disponível */
-    padding: 8px 10px; /* Ajusta o preenchimento */
-    border: none; /* Remove a borda */
-    font-size: 16px; /* Tamanho da fonte */
-    background-color: transparent; /* Cor de fundo transparente */
-    margin: 0; /* Remove qualquer margem externa */
-    border-radius: 0; /* Remove o border-radius específico do input */
+    flex: 1; 
+    padding: 8px 10px;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    margin: 0;
+    border-radius: 0;
 }
 
 .search-bar button {
-    padding: 8px 12px; /* Ajusta o preenchimento */
-    background-color: #AB1F2C; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    border: none; /* Remove a borda */
-    cursor: pointer; /* Muda o cursor para o ponteiro */
-    transition: background-color 0.3s ease; /* Transição suave */
+    padding: 8px 12px;
+    background-color: #AB1F2C;
+    color: #fff; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .search-bar button:hover {
-    background-color: darken(#AB1F2C, 10%); /* Escurece a cor de fundo ao passar o mouse */
+    background-color: darken(#AB1F2C, 10%);
 }
 
 
@@ -367,23 +357,23 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 450px; /* Ajuste para sua necessidade */
-    margin-top: 0; /* Garante que não há margem no topo */
+    min-height: 450px;
+    margin-top: 0;
     
 
 }
 
-/* Ajustes para dispositivos móveis */
+
 
     @media (max-width: 768px) {
         .banner {
-            height: 250px; /* ou qualquer altura desejada para dispositivos móveis */
+            height: 250px;
         }
     
         .banner img {
-            /* Se a imagem do banner estiver sendo esticada ou distorcida, considere ajustar essas propriedades também */
-            height: auto; /* Garante que a altura da imagem se ajuste proporcionalmente à largura */
-            object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem ser distorcida */
+          
+            height: auto; 
+            object-fit: cover;
         }
     }
     
@@ -395,9 +385,9 @@ body {
     height: auto;
     object-fit: cover;
     position: absolute;
-    top: 0; /* Isso ajuda a alinhar a imagem no topo do contêiner */
+    top: 0;
     left: 0;
-    transform: translate(0, 0); /* Ajustado para remover a translação */
+    transform: translate(0, 0);
 }
 
 
@@ -427,12 +417,12 @@ body {
 }
 
 .produto {
-    margin: 0 auto 50px; /* Centraliza horizontalmente e adiciona margem inferior */
+    margin: 0 auto 50px;
     transition: box-shadow 0.3s ease;
     display: flex;
     align-items: center;
     animation: moveProduct 3s infinite alternate;
-    max-width: 500px; /* Define a largura máxima dos produtos */
+    max-width: 500px;
 }
 
 .produto:hover {
@@ -441,8 +431,8 @@ body {
 }
 
 .produto img {
-    max-width: 300px; /* Aumenta o tamanho máximo das imagens dos produtos */
-    margin-right: 30px; /* Reduz a margem direita das imagens */
+    max-width: 300px;
+    margin-right: 30px;
 }
 
 .produto-info {
@@ -450,13 +440,13 @@ body {
 }
 
 .produto h3 {
-    margin: 0 0 10px; /* Remove a margem superior e define uma margem inferior */
-    font-size: 1.5rem; /* Aumenta o tamanho do título */
+    margin: 0 0 10px;
+    font-size: 1.5rem;
 }
 
 .produto p {
-    margin: 0 0 10px; /* Remove a margem superior e define uma margem inferior */
-    font-size: 1.2rem; /* Aumenta o tamanho do texto */
+    margin: 0 0 10px;
+    font-size: 1.2rem;
 }
 
 .produto a {
@@ -524,37 +514,32 @@ body {
     animation-play-state: paused;
 }
 
-/* Base styles for the banner */
+
 .banner-inferior {
-    width: 100%; /* Ensure full width */
-    overflow: hidden; /* Prevent overflow */
-    position: relative; /* For positioning inner elements */
-    /* Add more styles as needed */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
 }
 
-/* Adjust the banner's height dynamically */
 .banner-inferior img {
-    transition: none; /* Remove o efeito de transição */
+    transition: none; 
 }
 
-/* Ajusta o banner-inferior e o footer para preencherem a largura da tela */
 .banner-inferior, .main_footer {
-    width: 100%; /* Garante que ocupe toda a largura da tela */
-    overflow: hidden; /* Evita overflow horizontal */
+    width: 100%;
+    overflow: hidden; 
 }
 
-/* Certifique-se de que o conteúdo dentro do banner-inferior e do footer não exceda a largura da tela */
 .banner-inferior > *, .main_footer > * {
-    max-width: 100%; /* Limita a largura máxima dos elementos filhos */
-    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    max-width: 100%; 
+    box-sizing: border-box; 
 }
 
-/* Para evitar scroll horizontal em toda a página */
 html, body {
-    overflow-x: hidden; /* Esconde o overflow horizontal */
-    max-width: 100%; /* Limita a largura máxima para evitar scroll horizontal */
+    overflow-x: hidden;
+    max-width: 100%;
 }
-
 
 .banner-inferior h2 {
     margin-bottom: 20px;
@@ -581,20 +566,14 @@ html, body {
     margin-left: 300px
 }
 
-
-
-
 @media screen and (max-width: 768px) {
     .modal-content {
-        width: 95%; /* Faz com que o conteúdo do modal ocupe mais espaço na tela em dispositivos móveis */
+        width: 95%; 
     }
 }
 
-
-
-
 .imagem-grande:hover {
-    transform: scale(1.1); /* Aumenta a escala ao passar o mouse */
+    transform: scale(1.1);
 }
 
 #imgSobre{
@@ -622,16 +601,16 @@ html, body {
 
 .extra .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas para desktop */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    justify-content: center; /* Centraliza o conteúdo na página */
+    justify-content: center;
     
 }
 
 .imagem {
-    overflow: hidden; /* Ensures the border-radius effect is visible */
+    overflow: hidden;
     
-    /* other styles */
+   
 }
 
 .imagem-grande {
@@ -640,105 +619,99 @@ html, body {
     height: auto;
     object-fit: cover;
     margin: auto;
-    border-radius: 15px; /* Adds rounded corners */
+    border-radius: 15px;
 }
 
 
 @media (max-width: 768px) {
     .extra .container {
-        grid-template-columns: 1fr; /* Uma coluna para dispositivos móveis */
-        justify-items: center; /* Centraliza cada item no seu próprio espaço */
+        grid-template-columns: 1fr;
+        justify-items: center;
         margin-left: 18px;
         border-radius: 15px;
     }
 }
 
-/* Media query para telas maiores */
 @media (min-width: 769px) {
     .extra .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Ajusta para duas colunas */
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         justify-content: center;
         margin-left: 65px;
         
     }
     .imagem {
-        width: 100%; /* Ajusta a largura */
+        width: 100%;
         display: flex;
-        justify-content: center; /* Centraliza a imagem */
-        margin: auto; /* Espaço automático */
+        justify-content: center;
+        margin: auto;
         
     }
 }
 
-
-
 .container .imagem {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os itens verticalmente e horizontalmente */
-    margin-bottom: 20px; /* Adiciona um espaço abaixo de cada imagem */
+    align-items: center;
+    margin-bottom: 20px;
     
 }
 
-
 .imagem-grande {
-    width: auto; /* Mantém a largura original da imagem ou ajusta conforme necessário */
-    height: auto; /* Ajusta a altura para ser consistente */
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    object-fit: cover; /* Mantém a proporção da imagem sem cortá-la */
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
    
 }
 
 .produto-info {
-    text-align: center; /* Centraliza o texto abaixo da imagem */
-    padding: 10px; /* Adiciona um pouco de espaço ao redor do texto */
+    text-align: center;
+    padding: 10px;
 }
 
 .textoInicial {
     margin-top: 0;
-    background-color: #e0e0e0; /* Cor de fundo suave para destacar a seção */
-    padding: 40px 0; /* Espaçamento vertical para a seção */
+    background-color: #e0e0e0;
+    padding: 40px 0;
     display: flex;
 
 }
 
 .textoInicial .container {
-    max-width: 800px; /* Limita a largura máxima do texto para melhor leitura */
-    margin: 0 auto; /* Centraliza o contêiner */
-    padding: 20px; /* Espaço interno para não colar nas bordas */
-    text-align: center; /* Centraliza o texto */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .textoInicial h3 {
-    font-weight: bold; /* Título em negrito */
-    font-size: 25px; /* Aumenta o tamanho do título */
-    color: #232852; /* Cor escura para o título para contraste */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-weight: bold;
+    font-size: 25px;
+    color: #232852;
+    margin-bottom: 20px;
 }
 
 .textoInicial p {
-    font-size: 15px; /* Tamanho confortável para leitura */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    color: #555; /* Cor mais suave para o texto */
-    margin-bottom: 25px; /* Espaço abaixo do parágrafo */
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
 }
 
-/* Estilo da modal */
-/* Estilo comum para centralizar modais */
 .modal, .modal-zoom {
-    display: none; /* Mantenha oculto inicialmente */
-    position: fixed; /* Posicionamento fixo na página */
-    z-index: 1050; /* Sobre outros itens */
+    display: none;
+    position: fixed;
+    z-index: 1050;
     left: 0;
     top: 0;
-    width: 100%; /* Largura total */
-    height: 100%; /* Altura total */
-    overflow: auto; /* Permite rolagem se necessário */
-    background-color: rgba(0, 0, 0, 0.4); /* Fundo escurecido */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content, .modal-zoom .modal-content {
@@ -746,26 +719,22 @@ html, body {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%; /* Ou ajuste conforme necessário */
-    max-width: 600px; /* Máximo para desktop */
+    width: 90%;
+    max-width: 600px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-/* Animação para o modal aparecer deslizando de cima */
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
 
 .modal img {
-    width: 100%; /* Faz com que a imagem ocupe 100% da largura do modal-content */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-top: 20px; /* Espaçamento entre o texto e a imagem, se necessário */
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
-
-
-/* Ajusta o botão fechar para telas maiores */
 .close {
     background-color: red;
     border-radius: 9px;
@@ -773,14 +742,13 @@ html, body {
     height: 60px;
     color: red;
     position: absolute;
-    top: 10px; /* Ajustado para 10px para ficar mais acima */
+    top: 10px;
     right: 25px;
     font-size: 30px;
     font-weight: bold;
-    text-align: center; /* Centraliza horizontalmente */
-    line-height: 60px; /* Centraliza verticalmente */
+    text-align: center;
+    line-height: 60px;
 }
-
 
 .close:hover, .close:focus {
     color: #000;
@@ -788,75 +756,60 @@ html, body {
     cursor: pointer;
 }
 
-
 body {
-    margin-top: 0; /* Remove a margem do topo do body */
+    margin-top: 0;
     margin: 0;
     padding: 0;
     padding-top: 1px;
     
 }
 
-/* Certifique-se de que o primeiro elemento abaixo do navbar não tenha margem superior que possa criar um espaço */
 .primeiro-elemento-abaixo-do-navbar {
-    margin-top: 0; /* Ajuste o seletor conforme necessário */
+    margin-top: 0;
 }
 
-
-/* Estilo da tabela */
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
-/* Estilo do cabeçalho */
 th {
-    background-color: #232852; /* Cor de fundo do cabeçalho */
-    color: #fff; /* Cor do texto do cabeçalho */
-    padding: 12px; /* Espaçamento interno */
-    text-align: left; /* Alinhamento do texto */
+    background-color: #232852;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
 }
 
-/* Estilo das células */
-/* Estilo da tabela */
 table {
     width: 100% !important;
     border-collapse: collapse !important;
 }
 
-/* Estilo do cabeçalho */
 th {
-    background-color: #232852 !important; /* Cor de fundo do cabeçalho */
-    color: #fff !important; /* Cor do texto do cabeçalho */
-    padding: 12px !important; /* Espaçamento interno */
-    text-align: left !important; /* Alinhamento do texto */
+    background-color: #232852 !important;
+    color: #fff !important;
+    padding: 12px !important;
+    text-align: left !important;
 }
 
-/* Estilo das células */
 td {
-    border: 1px solid #ddd !important; /* Borda das células */
-    padding: 12px !important; /* Espaçamento interno */
-    text-align: left !important; /* Alinhamento do texto */
+    border: 1px solid #ddd !important;
+    padding: 12px !important;
+    text-align: left !important;
 }
 
-/* Estilo das células de dados alternadas */
 tr:nth-child(even) {
-    background-color: #f2f2f2 !important; /* Cor de fundo das linhas pares */
+    background-color: #f2f2f2 !important;
 }
 
-
-
-
-
-/* Estilização do Modal */
-.modal { /* Seu CSS para o modal aqui */ }
-.modal-content { /* Seu CSS para o conteúdo do modal aqui */ }
-.close { /* Seu CSS para o botão fechar aqui */ }
+.modal {}
+.modal-content {}
+.close {}
 .color-option {
   cursor: pointer;
-  width: 50px; /* Ajuste conforme necessário */
+  width: 50px;
   margin: 5px;
-  border: 1px solid #ddd; /* Adiciona uma borda para melhor visualização */
+  border: 1px solid #ddd;
 }
 
 
@@ -1031,8 +984,6 @@ tr:nth-child(even) {
 .main_footer_copy .by a:hover { text-decoration:underline; }
 .main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
 
-/*Responsivo*/
-/*768PX BREAKPOINT*/
 @media (min-width:48em){
 
 .colfooter  { width:30%; margin-right:5%; margin-bottom:0; }
@@ -1040,23 +991,17 @@ tr:nth-child(even) {
 
 }
 
-
-/* Importa as fontes Roboto e Poppins do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap');
 
-/* Aplica a fonte Roboto ao corpo do documento */
 body {
     font-family: 'Roboto', sans-serif;
     
 }
 
-/* Exemplo de uso da fonte Poppins para títulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
-
-/* Estilos da Seção de Informações Adicionais */
 .informacoes {
     background-color: #f0f0f0;
 }
@@ -1065,30 +1010,30 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    z-index: 1000; /* Garante que o botão fique acima de outros conteúdos */
+    z-index: 1000;
 }
 
 .whatsapp-button img {
-    width: 60px; /* Ajuste conforme necessário */
-    height: 60px; /* Ajuste conforme necessário */
-    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
 }
 
 .whatsapp-button:hover img {
-    transform: scale(1.1); /* Ligeiro aumento no ícone ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .scrolling-navbar {
     width: 100%;
-    height: 35px; /* Altura ajustada */
+    height: 35px;
     overflow: hidden;
-    background-color: #232852; /* Cor de fundo da navbar */
-    color: #fff; /* Cor do texto */
-    font-size: 15px; /* Tamanho do texto */
-    white-space: nowrap; /* Impede a quebra de linha do texto */
-    display: flex; /* Usa flexbox para alinhamento */
-    align-items: center; /* Alinha itens verticalmente ao centro */
-    justify-content: flex-start; /* Alinha itens horizontalmente ao início */
+    background-color: #232852;
+    color: #fff;
+    font-size: 15px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 @keyframes scroll-left {
@@ -1101,16 +1046,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .scrolling-content {
-    display: inline-block; /* Usa inline-block para o conteúdo */
+    display: inline-block;
     animation: scroll-left 20s linear infinite;
 }
 
-
-
-
-/* Estilos para dispositivos menores que 768px */
-/* Mobile Styles */
- /* CSS Original */
  * {
     margin: 0;
     padding: 0;
@@ -1119,93 +1058,81 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-navbar {
     display: flex;
-    background-color: #fff; /* Cor de fundo alterada para branco */
-    color: #000; /* Cor do texto alterada para preto, se necessário */
-    font-size: 12px; /* Tamanho do texto */
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
     font-family: "Exo", "Lucida Console", "Monaco", monospace;
     color: #818381;
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 7px 0; /* Espaçamento interno */
-    width: 100%; /* Assegura que ocupe toda a largura */
+    text-align: center;
+    padding: 7px 0;
+    width: 100%;
     
-    top: 0; /* Posiciona no topo da página */
-    z-index: 2000; /* Garante que esteja acima do navbar */
-    height: 45px; /* Altura definida */
-    border-bottom: 1px solid #E5E5E5; /* Adiciona borda preta na margem inferior */
+    top: 0;
+    z-index: 2000;
+    height: 45px;
+    border-bottom: 1px solid #E5E5E5;
    
-    border-top: 3px solid #232852; /* Adiciona uma barra fina preta acima da top-navbar */
+    border-top: 3px solid #232852;
 }
-
 
 .top-navbar .container {
     width: 90%;
     max-width: 1300px;
-    margin: 0 auto; /* Centraliza o conteúdo */
+    margin: 0 auto;
     padding: 2px;
 }
 
-/* Estilização existente */
-
-
 .top-navbar {
     display: flex;
-    background-color: #fff; /* Cor de fundo alterada para branco */
-    color: #000; /* Cor do texto alterada para preto, se necessário */
-    font-size: 12px; /* Tamanho do texto */
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
     font-family: "Exo", "Lucida Console", "Monaco", monospace;
     color: #818381;
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 7px 0; /* Espaçamento interno */
-    width: 100%; /* Assegura que ocupe toda a largura */
+    text-align: center;
+    padding: 7px 0;
+    width: 100%;
     
-    top: 0; /* Posiciona no topo da página */
-    z-index: 2000; /* Garante que esteja acima do navbar */
-    height: 45px; /* Altura definida */
-    border-bottom: 1px solid #E5E5E5; /* Adiciona borda preta na margem inferior */
+    top: 0;
+    z-index: 2000;
+    height: 45px;
+    border-bottom: 1px solid #E5E5E5;
    
-    border-top: 3px solid #232852; /* Adiciona uma barra fina preta acima da top-navbar */
+    border-top: 3px solid #232852;
 }
-
 
 .top-navbar .container {
     width: 90%;
     max-width: 1300px;
-    margin: 0 auto; /* Centraliza o conteúdo */
+    margin: 0 auto;
     padding: 2px;
 }
 
 .top-navbar a, .top-navbar a:visited, .top-navbar a:hover, .top-navbar a:active {
-    color: inherit; /* Isso fará com que o link herde a cor do texto do seu elemento pai. */
-    text-decoration: none; /* Isso remove o sublinhado do link. */
+    color: inherit;
+    text-decoration: none;
 }
 
-/* Estilização existente */
-
-
 .navbar {
-    background-color: #fff; /* Cor de fundo alterada para branco */
+    background-color: #fff;
     width: 100%;
     height: 112px;
     z-index: 1000;
-    color: #000; /* Cor do texto, ajuste conforme necessário */
+    color: #000;
     padding: 0 15px;
     transition: all 0.3s ease;
     display: flex; 
     justify-content: space-between;
     align-items: center;
     border-bottom: 2.5px solid #E5E5E5;
-    position: relative; /* Ajuste para garantir que fique fixo */
-    top: 0; /* Fixa o navbar no topo da página */
-    left: 0; /* Garante que o navbar esteja alinhado à esquerda */
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
-/* Ajuste adicional para garantir que o conteúdo da página não fique escondido atrás do navbar quando ele estiver fixo */
 body {
-    padding-top: 112px; /* Ajuste este valor conforme a altura do seu navbar */
+    padding-top: 112px;
 }
-
-
-
 
 .container {
     width: 90%;
@@ -1217,21 +1144,21 @@ body {
 }
 
 .logo img {
-    max-width: 120px; /* Adjust the logo size */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 120px;
+    height: auto;
 }
 
 .logo {
     display: flex;
-    width: 110px; /* Ou qualquer outro tamanho padrão */
-    height: auto; /* Mantém a proporção */
+    width: 110px;
+    height: auto;
 }
 
 .nav-links {
     list-style: none;
     margin-right: 20px;
     display: flex;
-    align-items: center; /* Adiciona alinhamento vertical dos elementos */
+    align-items: center;
 }
 
 .nav-links li {
@@ -1288,7 +1215,7 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 20px; /* Ajusta a margem direita do botão dropdown */
+    margin-right: 20px;
     margin-left: 20px;
     font-size: 10px;
     transition: transform 0.3s ease; 
@@ -1318,7 +1245,7 @@ body {
 .dropdown-menu .dropdown-item {
     color: #232852;
     padding: 15px 16px;
-    text-decoration: none; /* ajusta o conteúdo do menu*/
+    text-decoration: none;
     display: block;
     transition: background-color 0.3s ease;
     margin-right: 10px;
@@ -1331,11 +1258,11 @@ body {
 
 .menu-button {
     margin-left: 20px;
-    transition: transform 0.3s ease; /* Adiciona transição suave */
+    transition: transform 0.3s ease;
 }
 
 .menu-button:hover {
-    transform: scale(1.1); /* Aumenta a escala ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .dropdown-content {
@@ -1364,16 +1291,15 @@ body {
 }
 .social-links img {
     display: block;
-    width: auto; /* Ajuste a largura conforme necessário */
-    height: 32px; /* Ajuste a altura conforme necessário */
+    width: auto;
+    height: 32px;
 }
 
-/* Se estiver usando flexbox na .social-links, ajuste o gap conforme necessário */
 .social-links {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Ajuste este valor para controlar o espaçamento entre os ícones */
+    gap: 10px;
 }
 
 .social-link {
@@ -1392,23 +1318,22 @@ body {
 }
 
 .social-links a:hover::after {
-    transform: scale(1.2); /* Cor desejada para a animação */
+    transform: scale(1.2);
 }
 
 .social-links a {
-    margin: 0 5px; /* Ajuste o valor conforme necessário para reduzir o espaçamento */
+    margin: 0 5px;
     padding: 0;
 }
 
 .social-links a:hover {
-    transform: scale(1.1); /* Zoom de 10% ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .social-links a:last-child {
-    margin-right: 0; /* Remove a margem direita do último ícone */
+    margin-right: 0;
 }
 
-/* Remove o margin-right adicional */
 .social-link, .social-links a {
     margin-right: 0 !important;
 }
@@ -1421,59 +1346,55 @@ body {
     width: 100%;
     height: 2px;
     background-color: transparent;
-    transition: transform 0.3s ease; /* Alterada a propriedade de transição */
-    transform-origin: bottom right; /* Define o ponto de origem para evitar mover o background */
+    transition: transform 0.3s ease;
+    transform-origin: bottom right;
 }
 
 .dropdown-menu a:hover::after {
-    transform: scaleX(1.2); /* Apenas escala horizontalmente para manter a altura do item */
+    transform: scaleX(1.2);
 }
 
 .dropdown-menu a {
-    transition: transform 0.3s ease; /* Transição suave de 0.3 segundos */
+    transition: transform 0.3s ease;
 }
 
 .dropdown-menu a:hover {
-    transform: scale(1.1); /* Zoom de 10% ao passar o mouse */
+    transform: scale(1.1);
 }
-
-
-
-
 
 .search-bar {
     display: flex;
-    align-items: center; /* Alinha o ícone de pesquisa com o campo de entrada */
-    border-radius: 25px; /* Raio de borda para tornar a barra redonda */
-    border: 2px solid #232852; /* Adiciona uma borda sólida */
-    margin-right: 5px; /* Ajusta a margem direita */
-    background-color: transparent; /* Define o fundo do contêiner da barra de pesquisa como transparente */
-    overflow: hidden; /* Impede que o conteúdo ultrapasse o raio da borda */
+    align-items: center;
+    border-radius: 25px;
+    border: 2px solid #232852;
+    margin-right: 5px;
+    background-color: transparent;
+    overflow: hidden;
     
 }
 
 .search-bar input[type="text"] {
-    flex: 1; /* Permite que o input ocupe o espaço disponível */
-    padding: 8px 10px; /* Ajusta o preenchimento */
-    border: none; /* Remove a borda */
-    font-size: 16px; /* Tamanho da fonte */
-    background-color: transparent; /* Cor de fundo transparente */
-    margin: 0; /* Remove qualquer margem externa */
-    border-radius: 0; /* Remove o border-radius específico do input */
+    flex: 1;
+    padding: 8px 10px;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    margin: 0;
+    border-radius: 0;
     
 }
 
 .search-bar button {
-    padding: 8px 12px; /* Ajusta o preenchimento */
-    background-color: #AB1F2C; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    border: none; /* Remove a borda */
-    cursor: pointer; /* Muda o cursor para o ponteiro */
-    transition: background-color 0.3s ease; /* Transição suave */
+    padding: 8px 12px;
+    background-color: #AB1F2C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .search-bar button:hover {
-    background-color: darken(#AB1F2C, 10%); /* Escurece a cor de fundo ao passar o mouse */
+    background-color: darken(#AB1F2C, 10%);
 }
 
 
@@ -1485,43 +1406,33 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 450px; /* Ajuste para sua necessidade */
-    margin-top: 0; /* Garante que não há margem no topo */
+    min-height: 450px;
+    margin-top: 0;
     
 
 }
 
-/* Ajustes para dispositivos móveis */
-
     @media (max-width: 768px) {
         .banner {
-            /* Define uma altura mínima específica para o banner em dispositivos móveis */
-            min-height: 100px; /* Ajuste este valor conforme necessário */
+            
+            min-height: 100px;
         }
     
         .banner img {
-            /* Se a imagem do banner estiver sendo esticada ou distorcida, considere ajustar essas propriedades também */
-            height: auto; /* Garante que a altura da imagem se ajuste proporcionalmente à largura */
-            object-fit: cover; /* Garante que a imagem cubra o espaço disponível sem ser distorcida */
+            height: auto;
+            object-fit: cover;
         }
     }
     
-
-
-
 .banner img {
     width: 100%;
     height: auto;
     object-fit: cover;
     position: absolute;
-    top: 0; /* Isso ajuda a alinhar a imagem no topo do contêiner */
+    top: 0;
     left: 0;
-    transform: translate(0, 0); /* Ajustado para remover a translação */
+    transform: translate(0, 0);
 }
-
-
-
-
 
 .banner img:first-child {
     opacity: 1;
@@ -1546,12 +1457,12 @@ body {
 }
 
 .produto {
-    margin: 0 auto 50px; /* Centraliza horizontalmente e adiciona margem inferior */
+    margin: 0 auto 50px;
     transition: box-shadow 0.3s ease;
     display: flex;
     align-items: center;
     animation: moveProduct 3s infinite alternate;
-    max-width: 500px; /* Define a largura máxima dos produtos */
+    max-width: 500px;
 }
 
 .produto:hover {
@@ -1560,8 +1471,8 @@ body {
 }
 
 .produto img {
-    max-width: 300px; /* Aumenta o tamanho máximo das imagens dos produtos */
-    margin-right: 30px; /* Reduz a margem direita das imagens */
+    max-width: 300px;
+    margin-right: 30px;
 }
 
 .produto-info {
@@ -1569,13 +1480,13 @@ body {
 }
 
 .produto h3 {
-    margin: 0 0 10px; /* Remove a margem superior e define uma margem inferior */
-    font-size: 1.5rem; /* Aumenta o tamanho do título */
+    margin: 0 0 10px;
+    font-size: 1.5rem;
 }
 
 .produto p {
-    margin: 0 0 10px; /* Remove a margem superior e define uma margem inferior */
-    font-size: 1.2rem; /* Aumenta o tamanho do texto */
+    margin: 0 0 10px;
+    font-size: 1.2rem;
 }
 
 .produto a {
@@ -1664,28 +1575,24 @@ body {
     margin-left: 300px
 }
 
-
 .imagem-grande {
-    width: 150px; /* Reduzido de 450px para 350px */
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura máxima do contêiner */
+    width: 150px;
+    max-width: 100%;
     padding: 18px;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
-    margin-left: auto; /* Alinha a imagem ao centro horizontalmente */
-    margin-right: auto; /* Alinha a imagem ao centro horizontalmente */
+    transition: transform 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
 @media screen and (max-width: 768px) {
     .modal-content {
-        width: 95%; /* Faz com que o conteúdo do modal ocupe mais espaço na tela em dispositivos móveis */
+        width: 95%;
     }
 }
 
-
-
-
 .imagem-grande:hover {
-    transform: scale(1.1); /* Aumenta a escala ao passar o mouse */
+    transform: scale(1.1);
 }
 
 #imgSobre{
@@ -1713,83 +1620,81 @@ body {
 
 .extra .container .imagem {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente (se necessário) */
-    margin-bottom: 20px; /* Espaço abaixo de cada bloco de imagem */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .extra .imagem-grande {
-    width: 100%; /* Ajusta a largura para ser consistente */
-    max-height: 550px; /* Ajuste este valor conforme necessário */
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente se necessário */
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    margin: 0 auto;
 }
 
 
 .container .imagem {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os itens verticalmente e horizontalmente */
-    margin-bottom: 20px; /* Adiciona um espaço abaixo de cada imagem */
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 
 .imagem-grande {
-    width: auto; /* Mantém a largura original da imagem ou ajusta conforme necessário */
-    height: auto; /* Ajusta a altura para ser consistente */
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    object-fit: cover; /* Mantém a proporção da imagem sem cortá-la */
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
    
 }
 
 .produto-info {
-    text-align: center; /* Centraliza o texto abaixo da imagem */
-    padding: 10px; /* Adiciona um pouco de espaço ao redor do texto */
+    text-align: center;
+    padding: 10px;
 }
 
 .textoInicial {
     margin-top: 0;
-    background-color: #e0e0e0; /* Cor de fundo suave para destacar a seção */
-    padding: 40px 0; /* Espaçamento vertical para a seção */
+    background-color: #e0e0e0;
+    padding: 40px 0;
     display: flex;
 
 }
 
 .textoInicial .container {
-    max-width: 800px; /* Limita a largura máxima do texto para melhor leitura */
-    margin: 0 auto; /* Centraliza o contêiner */
-    padding: 20px; /* Espaço interno para não colar nas bordas */
-    text-align: center; /* Centraliza o texto */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .textoInicial h3 {
-    font-weight: bold; /* Título em negrito */
-    font-size: 25px; /* Aumenta o tamanho do título */
-    color: #232852; /* Cor escura para o título para contraste */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-weight: bold;
+    font-size: 25px;
+    color: #232852;
+    margin-bottom: 20px;
 }
 
 .textoInicial p {
-    font-size: 15px; /* Tamanho confortável para leitura */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    color: #555; /* Cor mais suave para o texto */
-    margin-bottom: 25px; /* Espaço abaixo do parágrafo */
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 25px;
 }
 
-/* Estilo da modal */
-/* Estilo comum para centralizar modais */
 .modal, .modal-zoom {
-    display: none; /* Mantenha oculto inicialmente */
-    position: fixed; /* Posicionamento fixo na página */
-    z-index: 1050; /* Sobre outros itens */
+    display: none; 
+    position: fixed;
+    z-index: 1050;
     left: 0;
     top: 0;
-    width: 100%; /* Largura total */
-    height: 100%; /* Altura total */
-    overflow: auto; /* Permite rolagem se necessário */
-    background-color: rgba(0, 0, 0, 0.4); /* Fundo escurecido */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content, .modal-zoom .modal-content {
@@ -1797,26 +1702,22 @@ body {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Ou ajuste conforme necessário */
-    max-width: 600px; /* Máximo para desktop */
+    width: 80%;
+    max-width: 600px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-/* Animação para o modal aparecer deslizando de cima */
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
 }
 
 .modal img {
-    width: 100%; /* Faz com que a imagem ocupe 100% da largura do modal-content */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-top: 20px; /* Espaçamento entre o texto e a imagem, se necessário */
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
-
-
-/* Ajusta o botão fechar para telas maiores */
 .close {
     color: white;
     position: absolute;
@@ -1833,20 +1734,17 @@ body {
 }
 
 body {
-    margin-top: 0; /* Remove a margem do topo do body */
+    margin-top: 0;
     margin: 0;
     padding: 0;
     padding-top: 1px;
     
 }
 
-/* Certifique-se de que o primeiro elemento abaixo do navbar não tenha margem superior que possa criar um espaço */
 .primeiro-elemento-abaixo-do-navbar {
-    margin-top: 0; /* Ajuste o seletor conforme necessário */
+    margin-top: 0;
 }
 
-
-/* Estilo da tabela */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -1862,19 +1760,15 @@ th {
   background-color: #f2f2f2;
 }
 
-/* Estilização do Modal */
-.modal { /* Seu CSS para o modal aqui */ }
-.modal-content { /* Seu CSS para o conteúdo do modal aqui */ }
-.close { /* Seu CSS para o botão fechar aqui */ }
+.modal {}
+.modal-content {}
+.close {}
 .color-option {
   cursor: pointer;
-  width: 50px; /* Ajuste conforme necessário */
+  width: 50px;
   margin: 5px;
-  border: 1px solid #ddd; /* Adiciona uma borda para melhor visualização */
+  border: 1px solid #ddd;
 }
-
-
-
 
 .main_footer {
     background-color: #232852;
@@ -1891,9 +1785,8 @@ th {
 
 .logo_footer img {
     width: 200px;
-    margin-right: 430px; /* Adjust as needed */
+    margin-right: 430px;
 }
-
 
 .footer_bottom {
     width: 100%;
@@ -1905,53 +1798,50 @@ th {
 .footer_address_contact {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align to the left */
-    margin-left: 20px; /* Add margin to the left */
+    align-items: flex-start;
+    margin-left: 20px;
 }
 
 .footer_newsletter {
-    background-color: transparent; /* Torna o background transparente */
+    background-color: transparent;
     padding: 20px;
     border-radius: 5px;
     width: auto;
     max-width: 400px;
-    box-shadow: none; /* Remova a sombra, se desejar manter o design limpo */
+    box-shadow: none;
     margin: 20px auto;
     margin-top: -130px;
     margin-right: 350px;
 }
 
-
 .footer_newsletter h3 {
-    color: whi; /* Cor do título */
-    margin-bottom: 20px; /* Espaçamento abaixo do título ajustado para 20px */
-    text-align: center; /* Centraliza o título */
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer_newsletter input[type="nome"],
 .footer_newsletter input[type="email"],
 .footer_newsletter input[type="profissao"] {
     font-size: 16px;
-    padding: 10px 0; /* Ajusta o padding para remover espaço extra nas laterais */
-    margin-bottom: 10px; /* Margem entre os campos */
-    border: none; /* Remove as bordas */
-    border-bottom: 2px solid #ccc; /* Aumenta a espessura da linha para 2px */
-    background-color: transparent; /* Garante que o fundo do input seja transparente */
-    color: #fff; /* Muda a cor do texto para branco (ou outra cor conforme necessário) */
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    color: #fff;
 }
 
-
-
 .footer_newsletter input::placeholder {
-    color: #ccc; /* Muda a cor do placeholder para claro, visível contra o fundo escuro */
+    color: #ccc;
 }
 
 .footer_newsletter button {
     font-size: 16px;
-    color: #232852; /* Muda a cor do texto para combinar com o hover */
-    background-color: white; /* Define a cor de fundo inicial como branco */
+    color: #232852;
+    background-color: white;
     padding: 10px;
-    border: 1px solid #232852; /* Adiciona uma borda sólida para manter o design consistente */
+    border: 1px solid #232852;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -1959,65 +1849,60 @@ th {
 }
 
 .footer_newsletter button:hover {
-    color: white; /* Cor do texto no hover */
-    background-color: #389b1a; /* Cor de fundo ao passar o mouse */
+    color: white;
+    background-color: #389b1a;
 }
-
-
 
 .footer_social {
     padding-top: 0;
-    margin-top: 0; /* Remove espaço extra no topo dos links sociais */
-    width: 100%; /* Utiliza a largura total do seu contêiner para alinhamento */
+    margin-top: 0;
+    width: 100%;
 }
 
 .footer_social a {
-    background-color: #fff; /* Fundo branco para os links */
-    border-radius: 50%; /* Faz os links ficarem circulares */
-    display: inline-flex; /* Permite o alinhamento dos ícones dentro do link */
-    justify-content: center; /* Centraliza o ícone horizontalmente */
-    align-items: center; /* Centraliza o ícone verticalmente */
-    margin-right: 10px; /* Espaço entre os ícones */
-    margin-bottom: 10px; /* Espaço abaixo de cada link para quando estiverem em coluna em telas menores */
-    width: 40px; /* Define um tamanho fixo para os links */
-    height: 40px; /* Define um tamanho fixo para os links */
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 .footer_contact {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha os itens à esquerda */
-    margin-bottom: 10px; /* Espaço moderado abaixo do conteúdo de contato */
+    align-items: flex-start;
+    margin-bottom: 10px;
 }
 
 .footer_social {
     display: flex;
-    justify-content: flex-start; /* Alinha os ícones das redes sociais à esquerda */
-    align-items: center; /* Centraliza os ícones verticalmente */
-    margin-top: 20px; /* Ajuste conforme necessário para reduzir o espaço */
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
     padding-top: 0;
-    width: 100%; /* Utiliza a largura total do seu contêiner para alinhamento */
+    width: 100%;
 }
 
 .socialImg {
-    margin-right: 10px; /* Espaço entre os ícones */
-    width: 24px; /* Largura dos ícones */
-    height: auto; /* Altura automática para manter a proporção */
+    margin-right: 10px;
+    width: 24px;
+    height: auto;
 }
 
 .footer_iconesSociais > a,
 .footer_iconesSociais > img {
-    margin-right: 5px; /* Espaçamento entre os ícones */
-    margin-left: 0; /* Remove margem esquerda, se houver */
+    margin-right: 5px;
+    margin-left: 0;
 }
 
-/* Remover margem do último ícone */
 .footer_iconesSociais > a:last-child,
 .footer_iconesSociais > img:last-child {
     margin-right: 0;
 }
-
-
 
 @media (max-width: 768px) {
     .footer_bottom {
@@ -2025,11 +1910,11 @@ th {
     }
     .footer_address_contact {
         align-items: center;
-        margin-left: 0; /* Remove left margin on mobile */
+        margin-left: 0;
     }
     .footer_newsletter {
-        width: 100%; /* Full width on mobile */
-        margin-top: 100px; /* Add space above on mobile */
+        width: 100%;
+        margin-top: 100px;
     }
 
     .footer_newsletter button{
@@ -2037,11 +1922,8 @@ th {
     }
 }
 
-
-
-
 .footer_bottom {
-    position: relative; /* Isso permite que elementos absolutamente posicionados se posicionem em relação a ele */
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -2049,19 +1931,17 @@ th {
 }
 
 .footer_left {
-    margin-left: 350px; /* Ajuste conforme necessário */
-    /* Remover margin-top e substituir por position absolute se precisar mover mais livremente */
+    margin-left: 350px;
     position: absolute;
-    top: -2px; /* Ajuste este valor conforme necessário para mover para cima */
-    left: 0; /* Ajuste se necessário */
+    top: -2px;
+    left: 0;
 }
-  /* Adicione 'top', 'left', 'right', 'bottom' conforme necessário para ajustar o posicionamento */
 
-  .footer_iconesSociais {
+.footer_iconesSociais {
     display: flex;
     margin-top: 30px;
     padding: 10px;
-    gap: 10px; /* Espaçamento entre os ícones */
+    gap: 10px; 
 }
 
 .footer_left {
@@ -2077,26 +1957,17 @@ th {
     }
 }
 
-
-
-
-
-/* Importa as fontes Roboto e Poppins do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap');
 
-/* Aplica a fonte Roboto ao corpo do documento */
 body {
     font-family: 'Roboto', sans-serif;
     
 }
 
-/* Exemplo de uso da fonte Poppins para títulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
-
-/* Estilos da Seção de Informações Adicionais */
 .informacoes {
     background-color: #f0f0f0;
 }
@@ -2105,30 +1976,30 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    z-index: 1000; /* Garante que o botão fique acima de outros conteúdos */
+    z-index: 1000;
 }
 
 .whatsapp-button img {
-    width: 60px; /* Ajuste conforme necessário */
-    height: 60px; /* Ajuste conforme necessário */
-    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
 }
 
 .whatsapp-button:hover img {
-    transform: scale(1.1); /* Ligeiro aumento no ícone ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .scrolling-navbar {
     width: 100%;
-    height: 35px; /* Altura ajustada */
+    height: 35px;
     overflow: hidden;
-    background-color: #232852; /* Cor de fundo da navbar */
-    color: #fff; /* Cor do texto */
-    font-size: 15px; /* Tamanho do texto */
-    white-space: nowrap; /* Impede a quebra de linha do texto */
-    display: flex; /* Usa flexbox para alinhamento */
-    align-items: center; /* Alinha itens verticalmente ao centro */
-    justify-content: flex-start; /* Alinha itens horizontalmente ao início */
+    background-color: #232852;
+    color: #fff;
+    font-size: 15px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 @keyframes scroll-left {
@@ -2141,16 +2012,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .scrolling-content {
-    display: inline-block; /* Usa inline-block para o conteúdo */
+    display: inline-block;
     animation: scroll-left 20s linear infinite;
 }
 
-
-
-
-/* Estilos para dispositivos menores que 768px */
-/* Mobile Styles */
-/* Base styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -2158,49 +2023,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo img {
-    width: 80px; /* Ajuste conforme necessário */
+    width: 80px;
 }
 
 .menu-button {
-    background: url('/path/to/menu-icon.png') no-repeat center; /* Substitua pelo caminho do seu ícone de menu */
+    background: url('/path/to/menu-icon.png') no-repeat center;
     border: none;
-    width: 58.5px; /* Ajuste conforme necessário */
-    height: 58.5px; /* Ajuste conforme necessário */
+    width: 58.5px;
+    height: 58.5px;
     cursor: pointer;
-    display: flex; /* Inicialmente escondido em desktop */
+    display: flex;
     margin-right: 10px;
 }
-/* Agrupa barra de pesquisa, links sociais e menu-button para alinhamento à direita */
+
 .right-section {
     display: flex;
     align-items: center;
 }
 
-.search-bar {
-    
-    /* CSS da barra de pesquisa, mantenha como está */
-}
+.search-bar {}
 
 .social-links {
-    /* CSS dos links sociais, mantenha como está */
-    margin-right: 20px; /* Adicione uma margem à direita para espaçamento */
+    margin-right: 20px;
     margin-left: 20px;
 }
 
 .menu-button {
-    margin-right: 40px; /* Ajuste a margem direita conforme necessário */
-    /* Restante do seu CSS */
+    margin-right: 40px;
 }
 
-/* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     .menu-button {
-        display: block; /* Mostra o botão de menu em dispositivos móveis */
+        display: block;
         margin-right: 1px;
     }
     
     .nav-links, .search-bar, .social-links {
-        display: none; /* Esconde os links de navegação, barra de pesquisa e links sociais em dispositivos móveis */
+        display: none;
     }
 }
 
@@ -2209,8 +2068,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 12px;
 }
 
-/* Base styles */
-/* Base do Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -2218,35 +2075,31 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
 }
 
-/* Logo à esquerda */
 .logo {
     flex-grow: 1;
     
 }
 
-/* Seção para a barra de pesquisa e links sociais - à esquerda do botão de menu */
 .middle-section {
     display: flex;
-    justify-content: flex-end; /* Alinha os itens ao final do container, à esquerda do botão de menu */
+    justify-content: flex-end;
     flex-grow: 2;
 }
 
-/* Barra de pesquisa e links sociais */
 .search-bar, .social-links {
     display: flex;
     align-items: center;
 }
 
 .social-links {
-    margin-right: 20px; /* Espaçamento entre links sociais e a barra de pesquisa */
+    margin-right: 20px;
     padding: 5px;
 }
 
-/* Botão do menu à direita */
 .menu-button {
-    order: 3; /* Garante que o botão de menu esteja à direita */
-    margin-left: 15px; /* Empurra o botão para a borda direita */
-    background: url('/path/to/menu-icon.png') no-repeat center; /* Substitua com seu ícone */
+    order: 3;
+    margin-left: 15px;
+    background: url('/path/to/menu-icon.png') no-repeat center;
     border: none;
     width: 58.5;
     height: 58.5;
@@ -2255,83 +2108,70 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .middle-section, .search-bar, .social-links {
-        display: none; /* Esconde em dispositivos móveis */
+        display: none;
     }
 
     .menu-button {
-        display: block; /* Mostra o botão de menu em dispositivos móveis */
+        display: block;
     }
 }
 
-/* Estilos existentes */
 .logo img {
-    width: 80px; /* Tamanho atual para mobile */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 80px;
+    height: auto;
 }
 
-/* Media query para telas maiores que 768px (versão desktop) */
 @media (min-width: 768px) {
     .logo img {
-        width: 120px; /* Tamanho maior para a versão desktop */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 120px;
+        height: auto;
         margin-left: 160px;
     }
 
     #numeroTelefone{
         margin-left: -120px;
     }
-
- 
-
-    
 }
 
-/* Estilo padrão para imagens (desktop) */
 .banner-img {
     width: 100%;
-    display: block; /* Ou "none" se você quiser ocultar inicialmente */
+    display: block;
 }
 
-
-/* Estilo comum para o banner de fundo */
-/* Estilo comum para todos os banners de fundo */
 .banner-bg {
     width: 100%;
-    height: 300px; /* Ajuste conforme necessário */
+    height: 300px;
     background-size: cover;
     background-position: center;
-    display: none; /* Oculta todos inicialmente */
+    display: none;
 }
 
-/* Media Query para Desktop */
 @media (min-width: 769px) {
-    .desktop-bg { display: block; } /* Exibe somente as imagens de desktop */
+    .desktop-bg { display: block; }
 }
 
-/* Media Query para Mobile */
 @media (max-width: 768px) {
-    .mobile-bg { display: block; } /* Exibe somente as imagens de mobile */
+    .mobile-bg { display: block; }
 }
 
 .imagem-grande {
-    border-radius: 9px; /* Ajuste o valor conforme desejado */
-    /* Outros estilos que você já tem aplicado */
+    border-radius: 9px;
 }
 
 #searchResults {
-    position: fixed; /* Altera de absolute para fixed para mover com a tela */
-    top: 125px; /* Ajusta para a posição desejada abaixo do navbar */
-    left: auto; /* Mantém à direita ou ajusta conforme necessário */
-    right: 20px; /* Posiciona à direita da tela, ajuste conforme necessário */
-    width: 300px; /* Mantém a largura conforme necessário */
+    position: fixed;
+    top: 125px;
+    left: auto;
+    right: 20px;
+    width: 300px;
     background-color: #fff;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    z-index: 1050; /* Certifique-se de que está acima do navbar */
+    z-index: 1050;
     max-height: 400px;
-    overflow-y: auto; /* Permite rolagem dentro do contêiner se o conteúdo exceder a altura máxima */
+    overflow-y: auto;
     border-radius: 9px;
-    margin-right: 280px; /* Remove o ajuste específico de margem esquerda */
+    margin-right: 280px;
 }
 
 @media (max-width: 767px) {
@@ -2340,32 +2180,30 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
 .result-item {
-    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
-    padding: 8px; /* Ajuste o padding conforme necessário */
-    border-bottom: 1px solid #ddd; /* Linha separadora entre os resultados */
+    font-size: 16px;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
 }
 
 .result-item strong {
     font-weight: bold;
-    color: #232852; /* Cor do texto "Resultado X" */
+    color: #232852;
 }
 
 .result-item span {
-    color: #232852; /* Cor do texto após os ":" */
+    color: #232852;
 }
 
-
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .extra .container .imagem {
-        justify-content: space-around; /* Distribui o espaço uniformemente ao redor dos itens */
+        justify-content: space-around;
     }
 
     .extra .imagem-grande {
-        margin: 0 10px; /* Adiciona uma margem lateral para evitar que as imagens toquem as bordas */
-        max-width: calc(100% - 35px); /* Reduz a largura máxima para considerar as margens laterais */
+        margin: 0 10px;
+        max-width: calc(100% - 35px);
         
         padding: 1px;
         font-size: 10px;
@@ -2375,63 +2213,53 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .extra .produto-info h3 {
-        font-size: 14px; /* Ajusta o tamanho da fonte conforme necessário */
+        font-size: 14px;
     }
 }
 
-  
-/* Base styles for banner inferior and footer */
-.banner-inferior, .main_footer {
-    /* Your base CSS here */
-}
+.banner-inferior, .main_footer {}
 
-/* Media queries for smaller devices */
 @media (max-width: 768px) {
     .banner-inferior, .main_footer {
-        /* Adjustments for smaller screens */
         width: 100%;
         padding: 10px;
         text-align: center;
     }
 }
 
-/* Estilo para a seção sobre */
 .sobre {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding: 40px 20px; /* Adiciona padding para espaçamento */
+    padding: 40px 20px;
     margin-top: -60px;
 }
 
-/* Estilo para o texto dentro da seção sobre */
 .sobre .info {
-    flex: 1 1 850px; /* Permite que o texto ocupe até 800 de largura */
-    max-width: 850px; /* Limita a largura máxima do texto */
-    margin: 0 20px; /* Adiciona margem para espaçamento */
+    flex: 1 1 850px;
+    max-width: 850px;
+    margin: 0 20px;
     font-size: 15px;
     color: #555;
 }
 
-/* Estilo para a imagem dentro da seção sobre */
 .sobre .imgInfo {
-    flex: 1 1 500px; /* Permite que a imagem ocupe até 300px de largura */
-    max-width: 800px; /* Limita a largura máxima da imagem */
-    margin: 20px; /* Adiciona margem para espaçamento */
+    flex: 1 1 500px;
+    max-width: 800px;
+    margin: 20px;
     
 }
 
-/* Ajustes para telas pequenas (dispositivos móveis) */
 @media (max-width: 768px) {
     .sobre {
-        flex-direction: column; /* Organiza o conteúdo em coluna para dispositivos móveis */
+        flex-direction: column;
     }
 
     .sobre .info, .sobre .imgInfo {
-        flex-basis: auto; /* Permite que o conteúdo ajuste sua largura automaticamente */
-        max-width: 100%; /* Ocupa 100% da largura disponível */
-        margin: 10px 0; /* Ajusta a margem para dispositivos móveis */
+        flex-basis: auto;
+        max-width: 100%;
+        margin: 10px 0;
     }
 }
 
@@ -2446,23 +2274,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal-content {
-    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+    overflow-x: auto;
   }
   
   table {
-    width: 100%; /* Ajusta a largura da tabela para preencher o contêiner */
-    border-collapse: collapse; /* Remove os espaços entre as bordas das células */
+    width: 100%;
+    border-collapse: collapse;
   }
   
   th, td {
-    border: 1px solid #ddd; /* Estiliza as bordas das células */
-    padding: 8px; /* Adiciona preenchimento interno às células */
-    text-align: left; /* Alinha o texto à esquerda */
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
   }
   
   @media (max-width: 768px) {
     .modal-content {
-      padding: 10px; /* Reduz o preenchimento no modal para dispositivos móveis */
+      padding: 10px;
     }
   }
   
@@ -2474,41 +2302,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ponto {
-    flex-basis: 20%; /* Faz com que cada .ponto ocupe aproximadamente 20% da largura do contêiner, permitindo 5 ícones por linha */
-    text-align: center; /* Centraliza o texto abaixo dos ícones */
-    padding: 10px; /* Adiciona um pouco de espaço ao redor de cada .ponto */
+    flex-basis: 20%;
+    text-align: center;
+    padding: 10px;
 }
 
 .pontosTitulo {
-    margin-top: 10px; /* Espaçamento entre o ícone e o título */
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
     .ponto {
-        flex-basis: 50%; /* Aumenta para 50% da largura para dispositivos móveis, resultando em 2 ícones por linha */
+        flex-basis: 50%;
     }
 }
 
 .pisoLekolSection {
-    text-align: center; /* Centraliza o conteúdo */
+    text-align: center;
 }
 
 .pisoLekolImage {
-    width: auto; /* Ajuste a largura conforme necessário */
-    max-width: 100%; /* Para garantir responsividade */
-    height: auto; /* Mantém a proporção */
-    margin: 0 auto; /* Centraliza a imagem */
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
     width: 500px;
 }
 
 .pisoLekolText {
-    margin-top: 20px; /* Espaço acima do texto */
-    max-width: 80%; /* Limita a largura do texto */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
-    text-align: center; /* Garante que o texto esteja centralizado */
-    font-size: 16px; /* Tamanho da fonte, ajustável conforme necessário */
-    color: #555; /* Cor do texto, ajustável conforme necessário */
+    margin-top: 20px;
+    max-width: 80%;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+    font-size: 16px;
+    color: #555;
 }
 
 
@@ -2534,7 +2362,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 20px;
     }
     .logo-space img {
-        width: 100px; /* Ajuste conforme necessário */
+        width: 100px;
         height: auto;
     }
 
@@ -2544,24 +2372,23 @@ h1, h2, h3, h4, h5, h6 {
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: white; /* Fundo branco */
-        color: black; /* Texto preto */
+        background-color: white;
+        color: black;
         text-align: center;
         padding: 10px;
-        border-top: 1px solid black; /* Borda superior fina preta */
+        border-top: 1px solid black;
         z-index: 1000;
     }
     
     #cookieConsentContainer button {
         color: white;
-        background-color: #232852; /* Botão na cor especificada */
+        background-color: #232852;
         border: none;
         padding: 5px 10px;
-        margin-left: 20px; /* Espaço adicional à esquerda para o ícone */
+        margin-left: 20px;
         cursor: pointer;
     }
     
-    /* Adicionando estilo para o ícone de cookie */
     #cookieIcon {
         vertical-align: middle;
         margin-right: 10px;
