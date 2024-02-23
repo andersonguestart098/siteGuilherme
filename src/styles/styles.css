@@ -2712,9 +2712,8 @@ td {
   transform: translateY(-5px);
 }
 
-.card-loja h3 {
+.card-loja h2 {
   color: #232852;
-  margin-bottom: 10px;
 }
 
 .card-loja p {
@@ -2742,10 +2741,12 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 100px;
 }
 
 .sobre-nos .container h2 {
-  margin-left: -15px;
+  margin-left: 150px;
+  color: #232852;
 }
 
 .sobre-nos h2,
@@ -2758,11 +2759,11 @@ td {
 @media (max-width: 768px) {
   .sobre-nos .container {
     padding: 0 20px;
-    margin-right: 170px;
+    margin-right: 120;
   }
 
   .sobre-nos .container h2 {
-    margin-left: 180px;
+    margin-right: -20px;
   }
 }
 
@@ -2778,8 +2779,6 @@ td {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
-  margin-left: 170px;
 }
 
 .downloads h2 {
@@ -2819,10 +2818,8 @@ td {
   }
 }
 
-.sobre-nos h2,
-.sobre-nos p,
 .downloads {
-  margin-left: 180px;
+  margin-left: -260px;
   margin-right: 5px;
   text-align: center;
 }
@@ -2833,7 +2830,6 @@ td {
     align-items: center;
     margin-left: -10px;
     padding: 0 10px;
-    margin-left: -80px;
   }
 
   .card {
@@ -2963,45 +2959,47 @@ td {
     z-index: 10;
   }
 }
-@media only screen and (max-width: 600px) {
-  .downloads {
-    text-align: center;
-    padding: 20px 0;
-  }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.sobre-nos .container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.downloads,
+.sobre-nos {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
   .container {
-    width: 100%;
-    max-width: none;
-    margin: 0 auto;
-    padding: 0 15px;
+    flex-direction: column;
   }
 
-  .card {
-    width: auto;
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 20px;
-    box-sizing: border-box;
+  .downloads,
+  .sobre-nos {
+    width: 90%;
+    margin: 20px auto;
   }
-
-  .card a {
-    display: block;
-    color: white;
-    background-color: #232852;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-
-  .downloads h2 {
-    font-size: 20px;
-  }
-}
-
-p a img {
-  transition: transform 0.3s ease;
-}
-
-p a:hover img {
-  transform: scale(1.1);
 }
