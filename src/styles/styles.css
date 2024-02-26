@@ -88,7 +88,7 @@ body {
 
 .logo {
   display: flex;
-  width: 110px;
+  width: 140px;
   height: auto;
 }
 
@@ -1175,7 +1175,7 @@ body {
 }
 
 .logo img {
-  max-width: 120px;
+  max-width: 110px;
   height: auto;
 }
 
