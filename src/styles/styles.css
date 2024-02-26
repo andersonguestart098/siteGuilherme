@@ -2357,6 +2357,14 @@ td {
   gap: 20px;
 }
 
+#leve {
+  margin-left: -9px;
+}
+
+#facil {
+  margin-right: -9px;
+}
+
 .produto:hover {
   box-shadow: 0 45px 30px rgba(0, 0, 0, 0.1);
   animation-play-state: paused;
@@ -2697,6 +2705,14 @@ td {
   gap: 20px;
   justify-content: center;
   padding: 20px;
+}
+
+.container-lojas p {
+  margin-top: 10px;
+}
+
+.container-lojas h3 {
+  color: #232852;
 }
 
 .card-loja {
