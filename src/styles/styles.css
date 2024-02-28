@@ -1662,11 +1662,38 @@ body {
   margin: 0 auto;
 }
 
-.container .imagem {
+.container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente (se necessário) */
+  flex-wrap: wrap; /* Permite múltiplas linhas de itens */
+}
+
+.imagem {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+  align-items: center; /* Centraliza o conteúdo da imagem verticalmente */
+  width: 100%; /* Faz a imagem ocupar toda a largura de seu contêiner */
+  max-width: 500px; /* Um valor máximo para a largura da imagem pode ser definido conforme necessário */
+  margin: 20px auto; /* Adiciona margem acima/abaixo e centraliza horizontalmente */
+}
+
+/* Media query para notebook - telas até 1024px de largura */
+@media (max-width: 1024px) {
+  .container .imagem {
+    margin-left: 100px; /* Ajuste conforme necessário para notebooks */
+  }
+}
+
+/* Media query para desktop - telas acima de 1024px de largura */
+@media (min-width: 1025px) {
+  .container .imagem {
+    margin-left: 300px;
+  }
+}
+
+#separadorExtra {
+  width: 100%;
 }
 
 .imagem-grande {
@@ -2250,6 +2277,7 @@ h6 {
 @media (max-width: 768px) {
   .extra .container .imagem {
     justify-content: space-around;
+    margin-left: 10px;
   }
 
   .extra .imagem-grande {
