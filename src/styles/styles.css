@@ -1664,28 +1664,26 @@ body {
 
 .container {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente (se necessário) */
-  flex-wrap: wrap; /* Permite múltiplas linhas de itens */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .imagem {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo da imagem verticalmente */
-  width: 100%; /* Faz a imagem ocupar toda a largura de seu contêiner */
-  max-width: 500px; /* Um valor máximo para a largura da imagem pode ser definido conforme necessário */
-  margin: 20px auto; /* Adiciona margem acima/abaixo e centraliza horizontalmente */
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
 }
 
-/* Media query para notebook - telas até 1024px de largura */
 @media (max-width: 1024px) {
   .container .imagem {
-    margin-left: 100px; /* Ajuste conforme necessário para notebooks */
+    margin-left: 100px;
   }
 }
 
-/* Media query para desktop - telas acima de 1024px de largura */
 @media (min-width: 1025px) {
   .container .imagem {
     margin-left: 300px;
@@ -3046,4 +3044,95 @@ td {
     width: 90%;
     margin: 20px auto;
   }
+}
+
+.containerEspecificoRodape {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.containerEspecificoRodape strong {
+  color: #232852;
+}
+
+.detalhesEspecificoRodape {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.imagemEspecificoRodape {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 9px;
+}
+
+.textoEspecificoRodape {
+  max-width: 600px;
+}
+
+.textoEspecificoRodape h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #232852;
+}
+
+.caracteristicasEspecificoRodape {
+  text-align: left;
+}
+
+.caracteristicasEspecificoRodape div {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .detalhesEspecificoRodape {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagemEspecificoRodape {
+    max-width: 100%;
+  }
+
+  .textoEspecificoRodape {
+    text-align: center;
+  }
+}
+
+.bannerRodapeEspecifico img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .bannerRodapeEspecifico img {
+    height: 250px;
+  }
+}
+
+#imgBannerRodapeEspecifico {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #imgBannerRodapeEspecifico {
+    height: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.bannerRodapeEspecifico img {
+    height: 550px !important;
+  }
+}
+
+.tituloSessaoEspecifico h2 {
+  text-align: center;
+  color: #232852; /* Substitua pelo código hexadecimal exato do azul que está utilizando */
+  padding: 20px 0;
+  font-size: 40px; /* Ajuste o tamanho da fonte conforme necessário */
+  background-color: #ddd;
 }

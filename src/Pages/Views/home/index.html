@@ -30,6 +30,7 @@
                     <a class="dropdown-item" href="#banner1"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">HOME</a>
                     <a class="dropdown-item" href="#sobre-nos"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">SOBRE NÓS</a>
                     <a class="dropdown-item" href="#extra"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">PRODUTOS</a>
+                    <a class="dropdown-item" href="#rodape"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">RODAPÉ</a>
                     <a class="dropdown-item" href="#downloads"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">DOWNLOADS</a>
                     <a class="dropdown-item" href="#contato"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">CONTATO</a>
                     <a class="dropdown-item" href="#onde"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">ONDE ENCONTRAR</a>
@@ -282,6 +283,9 @@
               </div>
               
           </section>
+
+
+
           
           <hr class="separador" data-aos="fade-up" >
 
@@ -302,6 +306,36 @@
 
                    
                 </section>
+
+                
+          <hr class="separador" data-aos="fade-up" >
+
+        <section>
+  <div class="tituloSessaoEspecifico">
+    <h2>Rodapé</h2>
+  </div>
+  <div class="containerEspecificoRodape searchable" data-section-name="rodape" id="rodape" data-aos="fade-up" data-target="#rodape">
+    <div class="detalhesEspecificoRodape" data-aos="fade-up">
+      <img src="/public/rodape5.webp" alt="Produto 1" class="imagemEspecificoRodape" id="imgEspecificoRodape">
+      <div class="textoEspecificoRodape">
+        <h1>Rodapé de Polistireno Branco</h1>
+        <div class="caracteristicasEspecificoRodape">
+          <div><strong>Tipo:</strong> Rodapé de MDF.</div>
+          <div><strong>Acabamento:</strong> BRANCO LISO e FRISADO.</div>
+          <div><strong>Alturas:</strong> 7cm, 10cm, 15cm, 20cm.</div>
+          <div><strong>Espessura:</strong> 1,5cm.</div>
+          <div><strong>Comprimento:</strong> 240cm.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bannerRodapeEspecifico">
+    <img src="/public/bannerTeste01.jpg" id="imgBannerRodapeEspecifico" alt="" data-section-name="bannerRodape">
+  </div>
+</section>
+
+
 
                 <hr class="separador" data-aos="fade-up">
 
@@ -853,6 +887,25 @@
 });
 
 </script>
+
+<script>
+    function updateBannerRodapeImage() {
+        var screenWidth = window.innerWidth;
+        var imgBannerRodape = document.getElementById('imgBannerRodape');
+
+        if (screenWidth <= 768) {
+
+            imgBannerRodape.src = "/public/bannerTeste01_MOBILE1.jpg";
+        } else {
+
+            imgBannerRodape.src = "/public/bannerTeste01.jpg";
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", updateBannerRodapeImage);
+    window.addEventListener("resize", updateBannerRodapeImage);
+</script>
+
     
 </body>
 </html>
