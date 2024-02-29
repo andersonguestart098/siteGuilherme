@@ -29,7 +29,7 @@
             <div class="dropdown-menu" id="mobileDropdown" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#banner1"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">HOME</a>
                     <a class="dropdown-item" href="#sobre-nos"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">SOBRE NÓS</a>
-                    <a class="dropdown-item" href="#extra"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">PRODUTOS</a>
+                    <a class="dropdown-item" href="#pisos"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">PRODUTOS</a>
                     <a class="dropdown-item" href="#rodape"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">RODAPÉ</a>
                     <a class="dropdown-item" href="#downloads"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">DOWNLOADS</a>
                     <a class="dropdown-item" href="#contato"><img src="/public/Símbolo Folha Preto.png" style="width: 20px; margin-right: 5px;" alt="iconeFolha">CONTATO</a>
@@ -161,43 +161,39 @@
             </div>
         </section>
 
-        <hr class="separador" data-aos="fade-up" id="separadorExtra">
+        <hr class="separador" data-aos="fade-up">
     
-        <section class="extra searchable" data-section-name="Produtos" id="extra" id="Cores disponíveis" ata-target="#Cores disponíveis" data-aos="fade-up">
-            <div class="container">
-                <div class="imagem" >
-                    <img src="/public/piso003Recortado.jpg" alt="imagem1" class="imagem-grande">
-                    <div class="produto-info">
-                        <h3>Amendoim Rústico</h3>
-                    </div>
-                </div>
-                <div class="imagem">
-                    <img src="/public/testeRR.jpg" alt="imagem2" class="imagem-grande">
-                    <div class="produto-info">
-                        <h3>Carvalho Canadense</h3>
-                    </div>
-                </div>
-                <div class="imagem">
-                    <img src="/public/piso004Recortado.jpg" alt="imagem2" class="imagem-grande">
-                    <div class="produto-info">
-                        <h3>Vesúvio Grey</h3>
-                    </div>
-                </div>
-                <div class="imagem">
-                    <img src="/public/piso005Recortado.jpg" alt="imagem2" class="imagem-grande">
-                    <div class="produto-info">
-                        <h3>Carvalho Americano</h3>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-         <div id="imagemZoomModal" class="modal-zoom">
-                        <span class="close">&times;</span>
-                        <img class="modal-content-zoom" id="imagemZoom">
-                        <div id="captionZoom"></div>
-                    </div>
-                   
+                    <section class="galeria-imagens" data-section-name="pisos" id="pisos" ata-target="#pisos">
+                        <h2 class="titulo-galeria">Piso Laminado Gloss</h2>
+                        <br/><br/>
+                        <div class="container-imagens">
+                            <div class="imagem">
+                                <img src="/public/piso003Recortado.jpg" alt="Descrição da imagem 1">
+                                <div class="nome-produto">Amendoim Rústico</div>
+                            </div>
+                            <div class="imagem">
+                                <img src="/public/testeRR.jpg" alt="Descrição da imagem 2">
+                                <div class="nome-produto">Carvalho Canadense</div>
+                            </div>
+                            <div class="imagem">
+                                <img src="/public/piso004Recortado.jpg" alt="Descrição da imagem 3">
+                                <div class="nome-produto">Vesúvio Grey</div>
+                            </div>
+                            <div class="imagem">
+                                <img src="/public/piso005Recortado.jpg" alt="Descrição da imagem 4">
+                                <div class="nome-produto">Carvalho Americano</div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+                            <div id="imagemZoomModal" class="modal-zoom">
+                                <span class="close">&times;</span>
+                                <img class="modal-content-zoom" id="imagemZoom">
+                                <div id="captionZoom"></div>
+                            </div>
+
 
                     <hr class="separador" data-aos="fade-up" style="background-color: transparent;">
 
@@ -316,7 +312,7 @@
   </div>
   <div class="containerEspecificoRodape searchable" data-section-name="rodape" id="rodape" data-aos="fade-up" data-target="#rodape">
     <div class="detalhesEspecificoRodape" data-aos="fade-up">
-      <img src="/public/rodape5.webp" alt="Produto 1" class="imagemEspecificoRodape" id="imgEspecificoRodape">
+      <img src="/public/rodape3.jpg" alt="Produto 1" class="imagemEspecificoRodape" id="imgEspecificoRodape">
       <div class="textoEspecificoRodape">
         <h1>Rodapé de Polistireno Branco</h1>
         <div class="caracteristicasEspecificoRodape">
@@ -904,6 +900,67 @@
 
     document.addEventListener("DOMContentLoaded", updateBannerRodapeImage);
     window.addEventListener("resize", updateBannerRodapeImage);
+</script>
+
+<script>
+    
+const imagensGaleria = document.querySelectorAll('.container-imagens .imagem img');
+
+const modal = document.getElementById('imagemZoomModal');
+const modalImg = document.getElementById('imagemZoom');
+const captionText = document.getElementById('captionZoom');
+const closeModal = document.querySelector('.modal-zoom .close');
+
+imagensGaleria.forEach(imagem => {
+    imagem.addEventListener('click', function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt; 
+    });
+});
+
+
+closeModal.addEventListener('click', function() {
+    modal.style.display = "none";
+});
+
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+   
+    const galleryImages = document.querySelectorAll('.galeria-imagens .container-imagens .imagem img');
+    
+    galleryImages.forEach(image => {
+        image.addEventListener('click', function() {
+            const modalImage = document.getElementById("imagemZoom");
+            const src = this.getAttribute('src'); 
+            modalImage.src = src;
+
+            
+            if (window.innerWidth <= 768) {
+                setTimeout(() => {
+                    modalImage.classList.add("scroll-hint");
+                    
+               
+                    modalImage.addEventListener('animationend', () => {
+                        modalImage.classList.remove("scroll-hint");
+                    }, { once: true });
+                }, 100);
+            }
+        });
+    });
+
+    const closeModal = document.querySelector('.modal-zoom .close');
+    if (closeModal) {
+        closeModal.addEventListener('click', function() {
+            const modalImage = document.getElementById("imagemZoom");
+            modalImage.src = '';
+        });
+    }
+});
+
 </script>
 
     
