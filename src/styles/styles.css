@@ -3242,3 +3242,111 @@ td {
 .modal-content-zoom.scroll-hint {
   animation: scrollHint 2s ease-out;
 }
+
+.galeria-imagens .titulo-galeria {
+  text-align: center;
+  color: #232852;
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+.tituloSessaoEspecifico h2 {
+  text-align: center;
+  color: #232852;
+  margin-bottom: 20px;
+  font-size: 34px;
+  background-color: #ddd;
+  padding: 20px 0;
+  padding-bottom: 15px;
+}
+
+.textoSobreRodape {
+  text-align: justify;
+  padding: 20px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+}
+
+.textoSobreRodape p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #626262;
+  font-size: 16px;
+}
+
+#h2Rodape {
+  color: #232852;
+  font-size: 34px;
+}
+
+.destaquesRodape .destaquesConteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.destaqueItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  padding: 20px;
+}
+
+.destaqueTitulo {
+  color: #232852;
+  margin-top: 10px;
+}
+
+.destaqueItem img {
+  width: 60px;
+  height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .destaquesRodape .destaquesConteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .destaqueItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .destaqueItem img {
+    width: 60px;
+    margin-top: 0;
+  }
+
+  .destaqueTitulo {
+    font-size: 0.75rem;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.destaqueItem {
+  animation: float 3s ease-in-out infinite;
+}
